@@ -1,0 +1,589 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Corpling@GU - Publications</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="assets/css/main.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/amir_table.css" type="text/css" charset="utf-8"/>
+<link rel="stylesheet" href="trublu.css" type="text/css" charset="utf-8"/>
+
+<style type="text/css">
+/*body { background-color: white; font-family: Arial, sans-serif; font-size: 13px; line-height: 1.2; padding: 1em; color: #2E2E2E; margin: auto 2em; }
+*/
+form#quicksearch { width: auto; border-style: solid; border-color: gray; border-width: 1px 0px; padding: 0.7em 0.5em; display:none; position:relative; }
+span#searchstat {padding-left: 1em;}
+
+div#settings { margin-top:0.7em; /* border-bottom: 1px transparent solid; background-color: #efefef; border: 1px grey solid; */ }
+div#settings ul {margin: 0; padding: 0; }
+div#settings li {margin: 0; padding: 0 1em 0 0; display: inline; list-style: none; }
+div#settings li + li { border-left: 2px #efefef solid; padding-left: 0.5em;}
+div#settings input { margin-bottom: 0px;}
+
+div#settings.hidden {display:none;}
+
+#showsettings { border: 1px grey solid; padding: 0 0.5em; float:right; line-height: 1.6em; text-align: right; }
+#showsettings:hover { cursor: pointer; }
+
+.invalidsearch { background-color: red; }
+input[type="button"] { background-color: #efefef; border: 1px #2E2E2E solid;}
+
+table { width: 100%; empty-cells: show; border-spacing: 0em 0.2em; margin: 1em 0em; border-style: none; }
+th, td { border: 1px gray solid; border-width: 1px 1px; padding: 0.5em; vertical-align: top; text-align: left; }
+th { background-color: #efefef; }
+td + td, th + th { border-left: none; }
+
+td a { color: navy; text-decoration: none; }
+td a:hover  { text-decoration: underline; }
+
+.noshow { display: none;}
+.highlight div { background-color: #EFEFEF; border-top: 2px #2E2E2E solid; font-weight: bold; }
+.abstract div, .review div, .bibtex div { background-color: #EFEFEF; text-align: justify; border-bottom: 2px #2E2E2E solid; }
+.nextshow div { border-bottom: 1px gray solid; }
+
+.bibtex pre { width: 100%; overflow: auto; white-space: pre-wrap;}
+p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
+
+@media print {
+	p.infolinks, #qs_settings, #quicksearch, t.bibtex { display: none !important; }
+	.entry { page-break-inside: avoid; }
+}
+</style>
+</head>
+<body id="publications">
+
+<div id="wrapper">
+				<!-- Main -->
+					<div id="main">
+						<div class="inner" style="max-width: 1000px;">
+
+													<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong><i class="fa fa-home">&nbsp;</i>Corpling@GU</strong></a>
+									<ul class="icons">
+										<li><a href="https://corpling.uis.georgetown.edu/wiki/" class="icon fa-wikipedia-w"><span class="label">Wiki</span></a></li>
+										<li><a href="https://corpus-tools.org/" class="icon fa icon-annis"><span class="label">Corpus-tools.org</span></a></li>
+										<li><a href="https://www.github.com/gucorpling/" class="icon fa-github"><span class="label">GitHub</span></a></li>
+										<!--<li><a href="" >
+										<span class="iconstack fa-stack">
+												<i class="iconstack fa fa-search fa-stack-2x"></i>
+												<strong class="fa-stack-1x calendar-text">CQP</strong>
+										</span></a></li>-->
+									</ul>
+								</header>
+								
+								<section class="research">
+										<h1>Publications</h1>
+										<p>This page lists selected papers by lab members - see also a <a href="https://corpling.uis.georgetown.edu/amir/publications.html">complete list</a> of Amir's publications</p>
+<form action="" id="quicksearch">
+<input type="text" id="qs_field" autocomplete="off" placeholder="Type to search..." /> <input class="small" type="button" onclick="clearQS()" value="clear" />
+<span id="searchstat">Matching entries: <span id="stat">0</span></span>
+<div id="showsettings" onclick="toggleSettings()">settings...</div>
+<div id="settings" class="hidden">
+<ul>
+<li><input type="checkbox" class="search_setting" id="opt_useRegExp" onchange="updateSetting(this)"><label for="opt_useRegExp"> use RegExp</label></li>
+<li><input type="checkbox" class="search_setting" id="opt_noAccents" onchange="updateSetting(this)"><label for="opt_noAccents"> ignore accents</label></li>
+</ul>
+</div>
+</form>
+<div class="CSSTableGenerator">
+									<div class="bibtex_template">
+									<div class="entry">
+										<div class="autolist">
+										<div class="if author" style="margin-top:5px;   padding-left: 20px; text-indent: -20px;">
+											<span class="author" style="font-weight: bold; "></span>
+											<span class="if year">
+												(<span class="year"></span>), 
+											</span>
+											<span class="if journal">"</span><span class="if booktitle">"</span><span class="if school"><span class="title" style="font-style: italic"></span></span><span class="if !school"><span class="title"></span></span><span class="if journal">".</span><span class="if booktitle">". </span><span class="if school">. </span>
+										<span class="if journal" style="">
+											<span class="journal" style="font-style:italic"></span>
+												<span class="if volume">
+													<span class="volume"></span>
+													<span class="if number">
+														(<span class="number"></span>)</span><span class="if pages">, <span class="pages"></span>.
+											</span>
+												</span>
+										</span>
+										<span class="if booktitle" style="">In: 
+											<span class="booktitle" style="font-style:italic"></span>.<span class="if series" style=""> (<span class="series" style=""></span>.)</span>
+													<span class="if publisher">
+												<span class="publisher"></span>:
+												</span>
+													<span class="if address">
+												<span class="address"></span></span><span class="if pages">, <span class="pages"></span></span>.
+										</span>
+										<span class="if school" style="">
+											<span class="if type"><span class="type"></span>,</span>
+											<span class="school" style=""></span>. 
+										</span>
+											<span class="if url">
+												<br/>[<a class="bibtexVar" href="+url+" style="color:black; font-size:10px" extra="url">
+													<span class="if comment">
+														<span class="comment"></span>
+													</span>
+													<span class="if !comment">
+														<span>link</span>
+													</span>
+												</a>]
+											</span>
+											<span class="if url2">
+												[<a class="bibtexVar" href="+url2+" style="color:black; font-size:10px" extra="url2">
+													<span class="if comment2">
+														<span class="comment2"></span>
+													</span>
+													<span class="if !comment2">
+														<span>link</span>
+													</span>
+												</a>]
+											</span>
+											<span class="if doi">
+												<span class="if !url"><br/></span>[<a class="bibtexVar" href="+doi+" style="color:black; font-size:10px" extra="doi">DOI</a>]
+											</span>										</div>
+										</div>
+										</div>
+								</div>
+									<textarea id="bibtex_input" style="display:none;">
+@InCollection{Zeldes2018SC,
+  author    = {Amir Zeldes},
+  title     = {Compounds and Productivity in Advanced {L2} {G}erman Writing: A Constructional Approach},
+  booktitle = {Usage-inspired L2 Instruction: Researched Pedagogy},
+  year      = {2018},
+  editor    = {Lourdes Ortega and Andrea Tyler and Mariko Uno and Hae In Park},
+  note      = {3},
+  publisher = {John Benjamins},
+  pages     = {237-265},
+  url = {http://corpling.uis.georgetown.edu/amir/pdf/Compounds_and_Productivity_Zeldes_revised.pdf},
+  comment = {prepub version},
+  doi = {https://doi.org/10.1075/lllt.49.11zel},
+  address   = {Amsterdam}
+ }
+@InProceedings{Zeldes2018CRAC,
+  author    = {Amir Zeldes},
+  title     = {A Predictive Model for Notional Anaphora in {E}nglish},
+  booktitle = {{NAACL} 2018 Workshop on Computational Models of Reference, Anaphora, and Coreference ({CRAC})},
+  year      = {2018},
+  address   = {New Orleans, LA},
+  url = {http://corpling.uis.georgetown.edu/amir/pdf/predictive-model-notional_camera.pdf},
+  comment = {paper}
+}
+@InProceedings{MacAvaneyZeldes2018,
+  author    = {Sean MacAvaney and Amir Zeldes},
+  title     = {A Deeper Look into Dependency-Based Word Embeddings},
+  booktitle = {NAACL 2018 Student Research Workshop},
+  year      = {2018},
+  address   = {New Orleans, LA}
+}
+@article{Simpson_etal,
+  author={Simpson, S. Sean and Adams, Nikki and Brugman, M. Claudia and Conners, J. Thomas},
+  title={Detecting Novel and Emerging Drug Terms Using Natural Language Processing: A Social Media Corpus Study},
+  journal={Journal of Medical Internet Research: Public Health and Surveillance},
+  year={2018},
+  volume={4},
+  number={1},
+  pages={e2},
+  url={http://publichealth.jmir.org/2018/1/e2/}
+}
+@InCollection{Simpson_2017,
+  author = {Belew, Anna and Simpson, Sean},
+  title = {{Language extinction then and now}},
+  booktitle = {{Cataloguing the Endangered Languages of the World}},
+  year = {2018},
+  editor = {Campbell, Lyle and Belew, Anna},
+  publisher = {Taylor and Francis},
+  address={Abingdon}
+}
+
+@InCollection{Simpson_2017a,
+  author = {Heaton, Raina and Simpson, Sean},
+  title = {{How ELCat Serves Communities whose Languages are at Risk}},
+  booktitle = {{Cataloguing the Endangered Languages of the World}},
+  year = {2018},
+  editor = {Campbell, Lyle and Van Way, John and Belew, Anna},
+  publisher = {Taylor and Francis},
+  address={Abingdon}
+}
+@InCollection{Belew_2017,
+  author = {Belew, Anna and Simpson, Sean},
+  title = {{The Status of the World's Endangered Languages}},
+  booktitle = {{The Oxford Handbook of Endangered Languages}},
+  year = {2018},
+  editor = {Campbell, Lyle and Regh, Kenneth},
+  publisher = {Oxford University Press},
+  address={Oxford}
+}
+@InProceedings{Zeldes2018GURT,
+  author    = {Amir Zeldes},
+  title     = {A Neural Approach to Discourse Relation Signaling},
+  booktitle = {Georgetown University Round Table (GURT) 2018: Approaches to Discourse},
+  year      = {2018},
+  address   = {Washington, DC},
+  url = {http://corpling.uis.georgetown.edu/amir/pdf/neural_DR_abstract_GURT2018.pdf},
+  comment = {abstract},
+  url2 = {http://corpling.uis.georgetown.edu/amir/pdf/RST_GURT2018_final.pdf},
+  comment2 = {slides}
+}
+
+@InProceedings{Simpson2017,
+  author = {Simpson, Sean},
+  title = {{Reconstructing Thread Structure For Reddit Comments}},
+  journal = {{Mid-Atlantic Student Colloquium on Speech, Language and Learning (MASC-SLL)}},
+  address = {{Washington, DC}},
+  year = {2017}
+}
+
+@PhdThesis{Zhang2017,
+  type = {PhD Thesis},
+  title = {Mining Linguistic Tone Patterns Using Fundamental Frequency Time-Series Data},
+  author = {Shuo Zhang},
+  school = {Georgetown University},
+  url = {https://repository.library.georgetown.edu/handle/10822/1047816},
+  year = {2017}
+}
+
+@InProceedings{Zeldes2017a,
+  author    = {Amir Zeldes},
+  title     = {A Distributional View of Discourse Encapsulation: Multifactorial Prediction of Coreference Density in {RST}},
+  booktitle = {6th Workshop on Recent Advances in RST and Related Formalisms at INLG},
+  year      = {2017},
+  pages     = {20-28},
+  address   = {Santiago de Compostela, Spain},
+  url = {http://aclweb.org/anthology/W17-3603},
+  comment = {paper}
+}
+@InProceedings{ZhangZeldes2017,
+  author    = {Shuo Zhang and Amir Zeldes},
+  title     = {{GitDOX}: A Linked Version Controlled Online {XML} Editor for Manuscript Transcription},
+  booktitle = {Proceedings of FLAIRS-30},
+  year      = {2017},
+  pages     = {619-623},
+  address   = {Marco Island, FL},
+  url = {http://corpling.uis.georgetown.edu/amir/pdf/GitDOX_A_Linked_Version_Controlled_Online_XML_Editor_prepub.pdf},
+  comment = {paper}
+}
+@Article{Zeldes2017b,
+  author    = {Amir Zeldes},
+  title     = {The {GUM} Corpus: Creating Multilayer Resources in the Classroom},
+  journal   = {Language Resources and Evaluation},
+  year      = {2017},
+  volume    = {51},
+  number    = {3},
+  pages     = {581-612},
+  url = {http://corpling.uis.georgetown.edu/amir/pdf/GUM_paper_prepub.pdf},
+  comment = {prepub version},
+  doi = {http://dx.doi.org/10.1007/s10579-016-9343-x},
+  url2 = {http://rdcu.be/uONb},
+  comment2 = {read online}
+}
+@Article{GaetaZeldes2017,
+  author    = {Livio Gaeta and Amir Zeldes},
+  title     = {Between {VP} and {NN}: On the Constructional Types of German -er Compounds},
+  journal   = {Constructions and Frames},
+  year      = {2017},
+  volume    = {9},
+  number    = {1},
+  abstract  = {This paper is concerned with the classification and analysis of different types of German synthetic compounds headed by deverbal agent nouns in -er, such as Romanleser ‘novel reader’ or Gedankenleser ‘mind reader’, where the non-head is seen to saturate an argument of the head lexeme while adhering to the semantic interpretation found in corresponding VPs (e.g. the distinct senses of read in the previous examples). In contrast to several previous approaches which attempt to explain the relationship between VPs and compounds using a unified mechanism of incorporation or derivation, we argue that different compounding patterns require different analyses and that the respective constructions are to some extent independent of each other. While some such compounds are modelled after frequent, familiar VPs and take account of the usage profile of syntactic phrases, other productive sets of compounds extend independently lexicalized schemas with fixed compound heads. To support our analysis we undertake the largest empirical survey of these formations to date, using a broad coverage Web corpus. We suggest several categories of verb-object lexeme pairs to account for our data and formulate an analysis of the facts within the framework of Construction Morphology.},
+  url = {http://corpling.uis.georgetown.edu/amir/pdf/Between_VP_and_NN_prepub.pdf},
+  comment = {prepub version},
+  doi = {https://doi.org/10.1075/cf.9.1.01gae}
+}
+@PhdThesis{simonsondiss17,
+    title={Investigations of the Properties of Narrative Schemas},
+    author={Dan Simonson},
+	type={PhD Thesis},
+    year={2017},
+    school={Georgetown University}
+}
+@Article{SpalekZeldes2017,
+  author    = {Katharina Spalek and Amir Zeldes},
+  title     = {Converging Evidence for the Relevance of Alternative Sets: Data from {NP}s with Focus Sensitive Particles in {G}erman},
+  journal   = {Language and Cognition},
+  year      = {2017},
+  volume    = {9},
+  number    = {1},
+  pages     = {24-51},
+  doi = {http://dx.doi.org/10.1017/langcog.2015.12},
+  abstract  = {Recent psycholinguistic studies on the reality of alternative sets in processing focus NPs have shown that focus particles like ‘only’ play a special role in activating the mental representation of alternatives to focused nouns. In this paper we present a new corpus study which provides converging evidence to support psycholinguistic findings and suggests that alternatives preceded by a focus particle are not only more activated in experimental contexts, but are also more likely to be discussed in the subsequent context. To this end we develop and evaluate inter-annotator agreement on two novel annotation tasks in naturally occurring German corpus data: recognition of nominal alternatives in general without any context, and recognition of alternatives in the context of sentence pairs. We show that while annotators agree poorly on the first, they agree strongly on the second. We also develop a concept of ‘alternative density’, the number of alternatives realized in a sentence following a target NP, and present a mixed-effects model showing a very significant rise in density after the presence of German nur ‘only’ independently of other factors.},
+  url = {http://corpling.uis.georgetown.edu/amir/pdf/alternatives_prepub.pdf},
+  comment = {prepub version}
+}
+@InProceedings{RankLyricsPoster,
+  author = {Shuo Zhang},
+  title = {Rank{L}yrics: A ranking-based approach to automatic song lyrics generation},
+  year = {2017},
+  booktitle = {6th Mid-Atlantic Student Colloquium on Speech, Language, and Learning}, 
+  address= {George Washington University, Washington DC}
+}
+@Article{OdebrechtEtAl2017,
+  author    = {Carolin Odebrecht and Malte Belz and Amir Zeldes and Anke L\"{u}deling},
+  title     = {{RIDGES} Herbology - Designing a Diachronic Multi-Layer Corpus},
+  journal   = {Language Resources and Evaluation},
+  year      = {2017},
+  volume    = {51},
+  number    = {3},
+  pages     = {695-725},
+  doi       = {10.1007/s10579-016-9374-3},
+  url = {http://corpling.uis.georgetown.edu/corpling/dx.doi.org/10.1007/s10579-016-9374-3},
+  comment = {prepub version},
+  url2 = {http://www.readcube.com/articles/10.1007/s10579-016-9374-3},
+  comment2 = {read online}
+}
+@InProceedings{ZeldesSimonson2016,
+  author    = {Amir Zeldes and Dan Simonson},
+  title     = {Different Flavors of {GUM}: Evaluating Genre and Sentence Type Effects on Multilayer Corpus Annotation Quality},
+  booktitle = {Proceedings of LAW X – The 10th Linguistic Annotation Workshop},
+  year      = {2016},
+  pages     = {68-78},
+  address   = {Berlin},
+  url = {https://aclweb.org/anthology/W/W16/W16-1709.pdf},
+  comment = {paper}
+}
+@article{Kirtley_etal,
+  author = {Kirtley, Joelle and Drager, Katie and Grama, James and Simpson, Sean},
+  title = {An acoustic analysis of the vowels of Hawai‘i English},
+  journal = {Journal of the International Phonetic Association},
+  volume = {46},
+  number = {1},
+  pages={79-97},
+  year = {2016},
+  url = {https://www.cambridge.org/core/journals/journal-of-the-international-phonetic-association/article/div-classtitlean-acoustic-analysis-of-the-vowels-of-hawaii-englishdiv/3738B709E9967BA01B873DACF6FD7086}
+}
+@InProceedings{ZeldesSchroeder2016,
+  author    = {Amir Zeldes and Caroline T. Schroeder},
+  title     = {An {NLP} Pipeline for {C}optic},
+  booktitle = {Proceedings of the 10th ACL SIGHUM Workshop on Language Technology for Cultural Heritage, Social Sciences, and Humanities (LaTeCH2016)},
+  year      = {2016},
+  pages     = {146-155},
+  address   = {Berlin},
+  url = {http://aclweb.org/anthology/W/W16/W16-2119.pdf},
+  comment = {paper}
+}
+@InProceedings{Zeldes2016b,
+  author    = {Amir Zeldes},
+  title     = {{rstWeb} - A Browser-based Annotation Interface for Rhetorical Structure Theory and Discourse Relations},
+  booktitle = {Proceedings of NAACL-HLT 2016 System Demonstrations},
+  year      = {2016},
+  pages     = {1-5},
+  address   = {San Diego, CA},
+  url = {http://aclweb.org/anthology/N/N16/N16-3001.pdf},
+  comment = {paper}
+}
+@InProceedings{ZeldesZhang2016,
+  author    = {Amir Zeldes and Shuo Zhang},
+  title     = {When Annotation Schemes Change Rules Help: A Configurable Approach to Coreference Resolution beyond {OntoNotes}},
+  booktitle = {Proceedings of the NAACL2016 Workshop on Coreference Resolution Beyond OntoNotes (CORBON)},
+  year      = {2016},
+  pages     = {92-101},
+  address   = {San Diego, CA},
+  url = {http://aclweb.org/anthology/W/W16/W16-0713.pdf},
+  comment = {paper}
+}
+@InProceedings{Zeldes2016d,
+  author    = {Amir Zeldes},
+  title     = {A Quantitative Approach to Syntactic Alternations in {S}ahidic},
+  booktitle = {11th Congress of the International Association of Coptic Studies (IACS 2016)},
+  year      = {2016},
+  address   = {Claremont, CA}
+}
+@InProceedings{W16-2001,
+  author = {Shuo Zhang},
+  title = {Mining Linguistic Tone Patterns with Symbolic Representation},
+  booktitle = {Proceedings of the 14th {SIGMORPHON} Workshop on Computational Research in Phonetics, Phonology, and Morphology},
+  year = {2016},
+  pages = {1-9},
+  address = {Berlin, Germany},
+  doi = {https://doi.org/10.18653/v1/W16-2001},
+  url = {http://www.aclweb.org/anthology/W16-2001}
+}
+@InProceedings{simonsondavis2016,
+  author    = {Dan Simonson and Anthony Davis},
+  title     = {{NASTEA}: Investigating Narrative Schemas through Annotated Entities},
+  booktitle = {{Proceedings of the Second Workshop on Computing News Storylines (CNS 2016)
+                at EMNLP 2016}},
+  year      = {2016},
+  address   = {Austin, Texas},
+  pages     = {57-66},
+  url       = {http://aclweb.org/anthology/W16-5707}
+}
+@Article{SchroederZeldes2015,
+  author    = {Caroline T. Schroeder and Amir Zeldes},
+  title     = {Raiders of the Lost Corpus},
+  journal   = {Digital Humanities Quarterly},
+  year      = {2016},
+  volume    = {10},
+  number    = {2},
+  url       = {http://digitalhumanities.org/dhq/vol/10/2/000247/000247.html},
+}
+@Article{Zeldes2016c,
+  author    = {Amir Zeldes},
+  title     = {Probabilistic Pragmatics and Probabilistic Experience},
+  journal   = {Zeitschrift f\"{u}r Sprachwissenschaft},
+  year      = {2016},
+  volume    = {35},
+  number    = {1},
+  pages     = {109-116},
+  doi       = {http://dx.doi.org/10.1515/zfs-2016-0008},
+  url = {http://corpling.uis.georgetown.edu/amir/pdf/prob_prag_zeldes_2016.pdf},
+  comment = {prepub version}
+}
+@Article{KrauseZeldes2014,
+  title                    = {{ANNIS3}: A New Architecture for Generic Corpus Query and Visualization},
+  author                   = {Thomas Krause and Amir Zeldes},
+  journal                  = {Digital Scholarship in the Humanities},
+  voume = {31},
+  number = {1},
+  pages={118-139},
+  year                     = {2016},
+  note                     = {2},
+  doi                      = {http://dx.doi.org/10.1093/llc/fqu057},
+  url                      = {http://corpling.uis.georgetown.edu/amir/pdf/ANNIS3_DSH_prepub.pdf},
+  comment = {prepub version}
+}
+@TechReport{ZeldesSchroeder2013,
+  title                    = {SCRIPTORIUM Part-of-Speech Tagsets for {S}ahidic {C}optic. Version: 1.2.0_2018.07.03},
+  author                   = {Amir Zeldes and Caroline Schroeder},
+  address              = {Georgetown University and University of the Pacific},
+  year                     = {2018},
+  note                     = {9},
+  url                      = {https://github.com/CopticScriptorium/tagger-part-of-speech/raw/master/scriptorium_tagset_documentation.pdf}
+}
+@TechReport{ZeldesUDCoptic2016,
+  author                   = {Amir Zeldes},
+ title = {{C}optic Universal Dependency Guidelines. Version 1.1.0-2016-10-19},
+ address= {Georgetown University},
+ url = {https://github.com/CopticScriptorium/corpora/raw/master/coptic-treebank/Coptic_universal_dependencies_guidelines.pdf}
+}
+@InCollection{LuedelingRitzStedeEtAl2016,
+  author    = {Anke L\"{u}deling and Julia Ritz and Manfred Stede and Amir Zeldes},
+  title     = {Corpus Linguistics and Information Structure Research},
+  booktitle = {The Oxford Handbook of Information Structure},
+  year      = {2016},
+  editor    = {Caroline F\'{e}ry and Shinichiro Ichihara},
+  note      = {3},
+  publisher = {Oxford University Press},
+  pages     = {599-617},
+  doi = {https://dx.doi.org/10.1093/oxfordhb/9780199642670.013.013},
+  address   = {Oxford}
+ }
+ @TechReport{CASL_tech_2015,
+  author = {Conners, Thomas J. and Brugman, Claudia M. and Rodrigues, Paul and Simpson, Sean},
+  title = {{Summary of register properties from a corpus of Jakarta Indonesian Twitter}},
+  journal = {{Center for Advanced Study of Language}},
+  address = {{University of Maryland}},
+  year = {2015}
+}
+@Article{LeeEtAl2015,
+  title                    = {{CityU} Corpus of Essay Drafts of {E}nglish Language Learners: A Corpus of Textual Revision in Second Language Writing},
+  author                   = {John Lee and Chak Yan Yeung and Amir Zeldes and Marc Reznicek and Anke Lüdeling and Jonathan Webster},
+  journal                  = {Language Resources and Evaluation},
+  year                     = {2015},
+  note                     = {2},
+  number                   = {3},
+  pages                    = {659-683},
+  volume                   = {49},
+  doi                      = {http://link.springer.com/article/10.1007/s10579-015-9301-z},
+  url                      = {http://corpling.uis.georgetown.edu/amir/pdf/annis_cityu_prepub.pdf},
+  comment = {prepub version}
+}
+@inproceedings{simonsondavis2015,
+  title={Interactions between Narrative Schemas and Document Categories},
+  author={Dan Simonson and Anthony Davis},
+  booktitle={{Proceedings of the First Computing News Storylines Workshop (CnewS) at ACL-IJCNLP 2015}},
+  pages={1-10},
+  year={2015},
+  url={http://www.aclweb.org/anthology/W15-4501}
+}
+@InProceedings{SPMPoster,
+  author = {Shuo Zhang},
+  title = {Analyze Linguistic Tone Patterns Using Time-Series Data Mining Techniques},
+  year = {2015},
+  booktitle = {15th Workshop on Computational Phonology and Morphology ({CompMorPhon15})},
+  address= {Chicago}
+}
+@Article{ZeldesSchroeder2015,
+  title                    = {Computational Methods for Coptic: Developing and Using Part-of-Speech Tagging for Digital Scholarship in the Humanities},
+  author                   = {Amir Zeldes and Caroline T. Schroeder},
+  journal                  = {Digital Scholarship in the Humanities},
+  year                     = {2015},
+  note                     = {2},
+  number                   = {1},
+  pages                    = {164-176},
+  volume                   = {31},
+  url                      = {https://corpling.uis.georgetown.edu/amir/pdf/Computational_Methods_for_Coptic_prepub.pdf},
+  doi = {http://dx.doi.org/10.1093/llc/fqv057},
+  comment = {prepub version}
+}
+@Article{RomaryZeldesZipserer2015,
+  title                    = {&amp;lt;tiger2/&amp;gt; - Serialising the ISO SynAF Syntactic Object Model},
+  author                   = {Laurent Romary and Amir Zeldes and Florian Zipser},
+  journal                  = {Language Resources and Evaluation},
+  year                     = {2015},
+  note                     = {2},
+  pages                    = {1-18},
+  volume                   = {49},
+  doi                      = {http://dx.doi.org/10.1007/s10579-014-9288-x}
+}
+@InCollection{PetrovaZeldes2015,
+  title                    = {How exceptional is CP recursion in Germanic OV languages? Corpus-based evidence from Middle Low German},
+  author                   = {Svetlana Petrova and Amir Zeldes},
+  booktitle                = {Historical Corpora: Challenges and Perspectives},
+  publisher                = {Narr},
+  year                     = {2015},
+  address                  = {Tübingen},
+  editor                   = {Jost Gippert and Ralf Gehrke},
+  note                     = {3},
+  pages                    = {151-164},
+  series                   = {Korpuslinguistik und interdisziplinäre Perspektiven auf Sprache 5},
+  abstract                 = {CP recursion, i.e. verb fronting to a lower CP in complement clauses selected by bridge verbs, is considered typical for the Germanic languages with VO basic order (Danish, Faroese, Norwegian and Swedish) but exceptional in those with underlying OV structure, with Frisian being the only modern OV language displaying this property. Historical evidence has been taken to weaken the exceptional status of CP-recursion in OV languages, but the data is sparse or provides no diagnostics allowing for a safe interpretation of the facts. In this paper, we want to present historical data from an OV language that helps us to overcome this empirical problem. Data search in a small syntactically annotated corpus from Middle Low German (MLG) produced examples for complement clauses including a complementizer, in which the verb is in second position, following a non-subject constituent. Additionally, the clauses contain typical middle field elements suggesting that the verb has left the VP and targeted the C-domain of the clause. Following these considerations, we argue in favour of an analysis of these orders as instances of CP recursion, which in turn suggests it is not exceptional in OV languages. This pilot study is meant to emphasize both the relevance of MLG in research on comparative Germanic syntax as well as the role of historical corpora in solving open issues in theoretical linguistics.},
+  url                      = {https://books.google.com/books?id=7anlBgAAQBAJ&lpg=PP1&pg=PA151#v=onepage&q&f=false"},
+  comment = {Google Books}
+}
+@InProceedings{Zeldes2015a,
+  title                    = {Duplicitous Diabolos: Parallel Witness Encoding in Quantitative Studies of Coptic Manuscripts},
+  author                   = {Amir Zeldes},
+  booktitle                = {Proceedings of Balisage, Symposium on Cultural Heritage Markup. Balisage Series on Markup Technologies, vol. 16},
+  year                     = {2015},
+  address                  = {Washington, DC},
+  note                     = {4},
+  url                      = {http://www.balisage.net/Proceedings/vol16/print/Zeldes01/BalisageVol16-Zeldes01.html},
+  comment = {link}
+}
+@InProceedings{Zeldes2015,
+  title                    = {Tagging the Desert Fathers: Part of Speech Analysis in Sahidic Coptic Corpora},
+  author                   = {Amir Zeldes},
+  booktitle                = {43rd Annual North American Conference on Afroasiatic Linguistics (NACAL2015), 13-15.2.2015},
+  year                     = {2015},
+  address                  = {Washington, DC},
+  note                     = {4},
+}
+									</textarea>
+									<div id="bibtex_display" class="qs_table"></div>
+
+</div>
+</tbody>
+									<hr class="major"/>
+
+<footer>
+ <small>Created using <a href="http://jabref.sourceforge.net">JabRef</a> and <a href="https://github.com/pcooksey/bibtex-js">bibtex-js</a>.</small>
+</footer>
+</div>
+</section>
+</div>
+<!-- file generated by JabRef -->
+
+				<!-- Sidebar -->
+
+									<!--#include virtual="menu.html"-->
+</div>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/bibtex_js.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			
+			
+<script defer type="text/javascript" src="assets/js/jabref_search.js"></script>
+
+</body>
+</html>
