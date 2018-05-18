@@ -1,0 +1,66 @@
+.CSSTableGenerator {
+	margin:0px;padding:0px;
+	width:100%;
+	border:none;
+	
+}.CSSTableGenerator table{
+    border-collapse: collapse;
+        border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}
+.CSSTableGenerator tr:hover td{
+	
+}
+/*.CSSTableGenerator tr:nth-child(odd){ background-color:#E7E7E7; }
+.CSSTableGenerator tr:nth-child(even)    { background-color:#ffffff;*/ }.CSSTableGenerator td{
+	vertical-align:middle;
+	
+	
+	border-width:0px 0px 0px 0px;
+	text-align:left;
+	padding:4px;
+	font-size:10px;
+	font-family:Verdana;
+	font-weight:normal;
+	color:#000000;
+}.CSSTableGenerator tr:last-child td{
+	border-width:0px 0px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+	border-width:0px 0px 0px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+	border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+
+.pubtype{
+	font-weight:bold;
+	border-right: none;
+	border-left:none;
+	border-bottom: solid 2pt #174274;
+	color:#174274;
+
+	}
+td.Article:before{content: "Selected papers"}
+td.Book:before{content: "Books"}
+td.InProceedings:before{content: "Conference papers"}
+td.Electronic:before{content: "Reviews"}
+td.TechReport:before{content: "Technical reports"}
+td.InCollection:before{content: "Book chapters"}
+td.Proceedings:before{content: "Editorial work"}
+td.Conference:before{content: "Invited talks and unreviewed papers"}
+td.Misc:before{content: "Posters"}
+td.pubtype{	font-weight:bold;font-size:12pt; 	
+    background-color: white;
+    padding-top: 30px;}
+
+li.autolist{padding-left: 1em;text-indent: -1em; color:black;font-size: 10pt;}
+ul.autolist_ul{padding-left:1em}
+
+#qs_table ul{list-style: none; list-style-type: none;}

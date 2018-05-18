@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Discourse Heatmap</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="research">
+	<script type="text/javascript" src="../assets/js/bibtex_js.js"></script>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong><i class="fa fa-home">&nbsp;</i>Corpling@GU</strong></a>
+									<!--
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>-->
+								</header>
+
+							<!-- Content -->
+								<section class="research">
+									<header class="main">
+										<h1>What you say where -<br/> a discourse heatmap</h1>
+									</header>
+
+									<span class="image main">
+									<figure>
+									<img style="max-width:600px; max-height: 400px; border: 1px solid black" src="../images/rst_heatmap.png" alt="RST referetial heatmap" /></span>
+									
+									<figcaption class="research">A heatmap of back reference likelihood for a pronoun in the blue unit</figcaption></figure>
+											<p>
+											Does discourse structure constrain where we talk about what? Research on recurring mentions within discourse graphs shows 
+											back-reference is sensitive to the reasons why sentences and groups of sentences are uttered. In the image above, we fixate on a target
+											sentence in blue, and predict how likely it is that a pronoun inside it will have an antecedent in some other unit (without peeking at the words!). 
+											Redder units are more likely to contain an antecedent.
+											</p>
+											<p>
+											There are several frameworks for describing discourse graphs - we use Rhetorical Structure Theory (<span class="bibref">Mann &amp; Thompson 1988</span>), which posits that text are "trees of clauses".
+											Much like sentences form trees of words, discourse trees can lump together multiple clauses into complex discourse units, which often correspond to coherent sections or paragraphs in writing, and different
+											discourse units have different functions. Instead of function like 'subject' and 'object', discourse units have fiunctions such as expressing 'background information', 'evidence' or 'cause'. The example below
+											shows how these relations coalesce to form a coherent discourse.
+											</p>
+									
+									<figure>
+									<img style="max-width:400px; max-height: 400px; margin-bottom: 5px; border: 1px solid black" src="../images/rst_example.png" alt="RST referetial heatmap" /></span>
+									<figcaption class="research">Example analysis of a discourse fragment in RST (source: <a href="http://www.sfu.ca/rst/">RST website</a>)</figcaption></figure>
+
+									<p>The idea that discourse trees constrain what can be referred to where goes back at least to <span class="bibref">Polanyi's (1988)</span> 'stack of discourse units', determining entities available for pronominalization at each point (e.g. pronouns should)
+										refer back to words inside some maximal complex unit. This was formalized in RST by Veins Theory (<span class="bibref">Cristea et al. 1998</span>) usings Domain of Referential Accessibility (DRA): sub-parts of a discourse graph commanding
+										a unit with a pronoun are legitimate regions for back reference.
+										</p>
+									<p>Although subsequent work (<span class="bibref">Tetreault &amp; Allen 2003</span>) has shown that a categorical constraint forbidding pronouns from referring back to words outside their DRA is wrong, our recent work has shown that, when used 
+									quantitatively alongside other predictors, we can build predictive heatmaps like the one above. For more information see the paper linked below!</p>
+									
+<div class="row">
+  <div class="column">
+    <img src="../images/rst_festival.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../images/rst_ph_solution.png" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 2</div>
+      <img src="../images/rst_festival.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 2</div>
+      <img src="../images/rst_ph_solution.png" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="../images/rst_festival.png" style="width:100%" onclick="currentSlide(1)" alt="Lexical coreference for the recurring word 'festival'">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../images/rst_ph_solution.png" style="width:100%" onclick="currentSlide(2)" alt="Back reference for pronominal 'it' referring to a chemical solution">
+    </div>
+  </div>
+</div>
+									
+									[<a href="http://aclweb.org/anthology/W17-3603">full paper</a>]
+
+									<hr class="major"/>
+									<h2>References</h2>
+									<div class="bibtex_template">
+										<div class="if author" style="font-weight: bold; margin-top:5px;">
+											<span class="if year">
+												<span class="year"></span>, 
+											</span>
+											<span class="author"></span>
+											<span class="if url" style="margin-left: 10px">
+												<a class="url" style="color:black; font-size:10px">(view online)</a>
+											</span>
+										</div>
+										<div style="margin-left: 10px;">
+											<span class="title"></span>
+										</div>
+										<span class="if journal" style="margin-left: 10px">
+											<span class="journal" style="font-style:italic"></span>
+												<span class="if volume">
+													<span class="volume"></span>
+													<span class="if number">
+														(<span class="number"></span>)
+													</span>
+													<span class="if pages">
+												<span class="pages"></span>
+											</span>
+												</span>
+										</span>
+										<span class="if booktitle" style="margin-left: 10px">
+											<span class="booktitle" style="font-style:italic"></span>
+													<span class="if publisher">
+												<span class="publisher"></span>:
+												</span>
+													<span class="if address">
+												<span class="address"></span>
+												</span>
+													<span class="if pages">
+												,<span class="pages"></span>
+												</span>
+										</span>										
+								</div>
+									<textarea id="bibtex_input" style="display:none;">
+											@Article{MannThompson1988,
+											  title                    = {Rhetorical Structure Theory: Toward a Functional Theory of Text Organization},
+											  author                   = {William C. Mann and Sandra A. Thompson},
+											  journal                  = {Text},
+											  year                     = {1988},
+											  number                   = {3},
+											  pages                    = {243-281},
+											  volume                   = {8}
+											}
+@Article{Polanyi1988,
+  author    = {Livia Polanyi},
+  title     = {A Formal Model of the Structure of Discourse},
+  journal   = {Journal of Pragmatics},
+  year      = {1988},
+  volume    = {12},
+  number    = {5-6},
+  pages     = {601-638}
+}											
+@InProceedings{CristeaIdeRomary1998,
+  author    = {Dan Cristea and Nancy Ide and Laurent Romary},
+  title     = {Veins Theory: A Model of Global Discourse Cohesion and Coherence},
+  booktitle = {Proceedings of ACL/COLING},
+  url = {http://www.aclweb.org/anthology/P98-1044},
+  year      = {1998},
+  pages     = {281-285},
+  address   = {Montreal, Canada}
+}
+@InProceedings{TetreaultAllen2003,
+  author    = {Joel Tetreault and James Allen},
+  title     = {An Empirical Evaluation of Pronoun Resolution and Clausal Structure},
+  booktitle = {Proceedings of the 2003 International Symposium on Reference Resolution and its Applications to Question Answering and Summarization},
+  year      = {2003},
+  pages     = {1-8},
+  url = {https://www.cs.rochester.edu/~tetreaul/clause.pdf},
+  address   = {Venice, Italy}
+}
+									</textarea>
+									<div id="bibtex_display"></div>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+
+									<!--#include virtual="../menu.html"-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/modal.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
