@@ -354,10 +354,10 @@ function BibtexDisplay() {
         string = string.replace(/[ ]*[\n\t][ ]*/g, " ");
         string = string.replace(/[ ]+/g, " ");
         var arrayString = string.split(new RegExp("[\\s]+and[\\s]+"));
-        var newString = arrayString[0];
+        var newString = this.invertAuthor(arrayString[0]);
         for (i = 1; i < arrayString.length; i++) {
             if (i + 1 >= arrayString.length) {
-                newString += ", and " + arrayString[i];
+                newString += " and " + arrayString[i];
             } else {
                 newString += ", " + arrayString[i];
             }
@@ -365,6 +365,14 @@ function BibtexDisplay() {
         return newString;
     }
 
+	this.invertAuthor = function(author){
+		var author_parts = author.split(" ");
+		if (author_parts.length > 1){
+			author = author_parts[author_parts.length - 1] + ", " + author_parts.slice(0,author_parts.length - 1).join(" ");
+		}
+		return author;
+	}
+	
     this.createTemplate = function(entry, output) {
         // Check if bibtex keys are limiting output (bibtexkeys="key1|key2|...|keyN")
         if (output[0].hasAttribute("bibtexkeys")) {
