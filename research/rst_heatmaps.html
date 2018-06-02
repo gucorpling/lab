@@ -116,42 +116,60 @@
 									<hr class="major"/>
 									<h2>References</h2>
 									<div class="bibtex_template">
-										<div class="if author" style="font-weight: bold; margin-top:5px;">
+									<div class="entry">
+										<div class="autolist">
+										<div class="if author" style="margin-top:5px;   padding-left: 20px; text-indent: -20px;">
+											<span class="author" style="font-weight: bold; "></span>
 											<span class="if year">
-												<span class="year"></span>, 
+												(<span class="year"></span>), 
 											</span>
-											<span class="author"></span>
-											<span class="if url" style="margin-left: 10px">
-												<a class="url" style="color:black; font-size:10px">(view online)</a>
-											</span>
-										</div>
-										<div style="margin-left: 10px;">
-											<span class="title"></span>
-										</div>
-										<span class="if journal" style="margin-left: 10px">
+											<span class="if journal">"</span><span class="if booktitle">"</span><span class="if school"><span class="title" style="font-style: italic"></span></span><span class="if !school"><span class="title"></span></span><span class="if journal">".</span><span class="if booktitle">". </span><span class="if school">. </span>
+										<span class="if journal" style="">
 											<span class="journal" style="font-style:italic"></span>
 												<span class="if volume">
 													<span class="volume"></span>
 													<span class="if number">
-														(<span class="number"></span>)
-													</span>
-													<span class="if pages">
-												<span class="pages"></span>
+														(<span class="number"></span>)</span><span class="if pages">, <span class="pages"></span>.
 											</span>
 												</span>
 										</span>
-										<span class="if booktitle" style="margin-left: 10px">
-											<span class="booktitle" style="font-style:italic"></span>
+										<span class="if booktitle" style="">In: 
+											<span class="booktitle" style="font-style:italic"></span>.<span class="if series" style=""> (<span class="series" style=""></span>.)</span>
 													<span class="if publisher">
 												<span class="publisher"></span>:
 												</span>
 													<span class="if address">
-												<span class="address"></span>
-												</span>
-													<span class="if pages">
-												,<span class="pages"></span>
-												</span>
-										</span>										
+												<span class="address"></span></span><span class="if pages">, <span class="pages"></span></span>.
+										</span>
+										<span class="if school" style="">
+											<span class="if type"><span class="type"></span>,</span>
+											<span class="school" style=""></span>. 
+										</span>
+											<span class="if url">
+												<br/>[<a class="bibtexVar" href="+url+" style="color:black; font-size:10px" extra="url">
+													<span class="if comment">
+														<span class="comment"></span>
+													</span>
+													<span class="if !comment">
+														<span>link</span>
+													</span>
+												</a>]
+											</span>
+											<span class="if url2">
+												[<a class="bibtexVar" href="+url2+" style="color:black; font-size:10px" extra="url2">
+													<span class="if comment2">
+														<span class="comment2"></span>
+													</span>
+													<span class="if !comment2">
+														<span>link</span>
+													</span>
+												</a>]
+											</span>
+											<span class="if doi">
+												<span class="if !url"><br/></span>[<a class="bibtexVar" href="+doi+" style="color:black; font-size:10px" extra="doi">DOI</a>]
+											</span>										</div>
+										</div>
+										</div>
 								</div>
 									<textarea id="bibtex_input" style="display:none;">
 											@Article{MannThompson1988,
