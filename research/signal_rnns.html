@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>A Neural Network Reads the Newspaper</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="research">
+	<script type="text/javascript" src="../assets/js/bibtex_js.js"></script>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong><i class="fa fa-home">&nbsp;</i>Corpling@GU</strong></a>
+									<!--
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>-->
+								</header>
+
+							<!-- Content -->
+								<section class="research">
+									<header class="main">
+										<h1>A Neural Network Reads the Newspaper</h1>
+									</header>
+
+									<span class="image main">
+									<figure>
+									<img style="max-width:600px; max-height: 400px; border: 1px solid black" src="../images/signal_rnn.png" alt="RNN reads newspaper for discourse signals" /></span>
+									
+									<figcaption class="research">Visualization of RNN output highlighting words most likely to signal a discourse relation</figcaption></figure>
+											<p>
+											... in search of discourse signals! We now know a lot about what cues people use to identify discourse relations, but can we teach computers to notice the same signals?</p>
+											<p>
+											<p>Working with Rhetorical Structure Theory (RST, <span class="bibref">Mann &amp; Thompson 1988</span>), researchers at SFU (<span class="bibref">Taboada &amp; Das 2013</span>) studied how people recognize discourse relations in text, such as <i>cause</i> (readers should understand what happened in sentence A is the cause of what happened in sentence B), <i>evidence</i> (e.g. clause B is given to make us believe A), or <i>contrast</i> (A and B differ in some relevant respect). They took the RST Discourse Treebank (<span class="bibref">Carlson et al. 2003</span>), which gives RST analyses for 180,000 tokens of Wall Street Journal data, and annotated them again for <b>signals</b> - words, constructions, and other cues that tell readers which relation is present. They found that simple discourse markers, such as 'because' (signalling <i>cause</i>) or 'but' (signalling <i>contrast</i>), signal only around 22% of relations, while almost 78% of signals were more complex. In total, over 86% of relations were signaled in some way, including by repeating salient words (mentioning the same person), using genre conventions, or item of graphical layout. You can read more about their work <a href="https://doi.org/10.5087/dad.2013.211">here</a>.
+											</p>
+											<p>
+											Recent advances in Computational Linguistics have made it increasingly possible for computers to recognize the presence of the same discourse relations automatically using Recurrent Neural Networks (e.g. <span class="bibref">Braud et al. 2017</span>, see <span class="bibref">Morey et al. 2017</span> for an overview). However, RNNs can be 
+											good at classifying language, while giving us little insight into how or why certain utternaces are classified. In this experiment, we decided to train an RNN (specifically a biLSTM-CRF) to recognize relations from the RST Discourse Treebank, but instead of outputting the correct relation, we designed it to output a probability distribution over all relations at each word, while reading the text backwards and forwards. This means that every word is evaluated in context, based on adjacent words: a word like 'but' can be important in one case, or not important in another. The basic architecture is sketched out below (for more details see <span class="bibref">Zeldes 2018</span>, Chapter 6).
+											</p>
+											<figure>
+												<img style="max-width:400px; max-height: 400px; margin-bottom: 5px; border: 1px solid black" src="../images/signal_lstm.png" alt="biLSTM-CRF to read data from discourse" /></span>
+												<figcaption class="research">biLSTM-CRF with word and character embeddings classifying discourse relations</figcaption>
+											</figure>
+
+											<p>To visualize the signals the network notices, we shade each word in each sentence based on the softmax probability the network assigns to the correct relation at that point. 50% of
+											each word's darkness comes from 'how good it is in this sentence' and 50% come from 'how good it is in this text'.
+											For example, if the network is reading a <i>contrast</i> statement, and sees the word 'but', it might give 60% probability that this is a <i>contrast</i>, but also 30% that it's <i>concesssion</i> and 10% divided among other relations. If this is the highest probability word for the correct relation (<i>contrast</i>) in this sentence, the word receives the maximum of 50% darkness for 'how good it is in the sentence'. Suppose that in the entire text, no other word scored more than 60% for its correct relation. In this case, the word 'but' will receive another
+											50% darkness and be visualized as completely black. This is illustrated below.</p>
+											
+									<figure>
+									<img style="max-width:400px; max-height: 400px; margin-bottom: 5px; border: 1px solid black" src="../images/softmax_shading.png" alt="Shading words" /></span>
+									<figcaption class="research">Shading words by proportion of maximum softmax for the correct relation in the sentence and in the text</figcaption></figure>
+
+									<p>So how does the network compare to humans? It notices some of the same things, but also some different ones. Below Janet Liu from our lab identified words corresponding to human
+									signaling annotation, where words are flagged categorically as signals (bold) or not signals based on the annotations of the RST Discourse Treebank. Next to these you can see the network output, with gradual shading. Note that we are not learning to detect signals by training on signaling annotation: the network is really learning how to recognize relations, and outputting signals as a by-product. It's relatively easy to catch discourse markers, such as 'then', or a relative pronoun 'which' signaling an elaboration. The challenge we are working on is figuring out what features the network needs to know about beyond just word forms in order to notice discourse relations reliably, for example engineering features to catch meaningful repetitions ('Senator Byrd' below). </p>
+									
+											<figure>
+												<span><img title="human annotation" style="max-width:600px; max-height: 600px; margin-bottom: 5px; border: 1px solid black" src="../images/wsj_0623_signaling.png" alt="human signaling annotation" /></span>
+												<span><img title="RNN softmax shading" style="max-width:600px; max-height: 600px; margin-bottom: 5px; border: 1px solid black" src="../images/wsj_0623_lstm.png" alt="RNN prediction" /></span>
+												<figcaption class="research">Discourse relation signals annotated by a human (top) and an RNN (bottom)</figcaption>
+											</figure>
+									
+									<p>To learn more about this work, check out this talk:</p>
+									<a href="https://jh.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4b37fa51-673c-42d0-8bf1-a8900119965f" class="image"><img src="https://corpling.uis.georgetown.edu/corpling/images/amir_jhu2018.png" style="width: 200px;" alt="Amir giving a talk at JHU"></a>
+									
+									
+									<hr class="major"/>
+									<h2>References</h2>
+									<div class="bibtex_template">
+									<div class="entry">
+										<div class="autolist">
+										<div class="if author" style="margin-top:5px;   padding-left: 20px; text-indent: -20px;">
+											<span class="author" style="font-weight: bold; "></span>
+											<span class="if year">
+												(<span class="year"></span>), 
+											</span>
+											<span class="if journal">"</span><span class="if booktitle">"</span><span class="if school"><span class="title" style="font-style: italic"></span></span><span class="if !school"><span class="if !booktitle"><span class="if publisher"><span class="title" style="font-style: italic"></span></span></span></span><span class="if !school"><span class="if !publisher"><span class="title"></span></span></span><span class="if journal">".</span><span class="if booktitle">". </span><span class="if school">. </span><span class="if !school"><span class="if publisher">. </span></span>
+										<span class="if journal" style="">
+											<span class="journal" style="font-style:italic"></span>
+												<span class="if volume">
+													<span class="volume"></span>
+													<span class="if number">
+														(<span class="number"></span>)</span><span class="if pages">, <span class="pages"></span>.
+											</span>
+												</span>
+										</span>
+										<span class="if booktitle" style="">In: 
+											<span class="booktitle" style="font-style:italic"></span>.<span class="if series" style=""> (<span class="series" style=""></span>.)</span>
+													<span class="if publisher">
+												<span class="publisher"></span>:
+												</span>
+													<span class="if address">
+												<span class="address"></span></span><span class="if pages">, <span class="pages"></span></span>.
+										</span>
+										<span class="if !booktitle" style=""><span class="if publisher"><span class="if series" style=""> (<span class="series" style=""></span>.)</span>
+													<span class="if publisher">
+												<span class="publisher"></span>:
+												</span>
+													<span class="if address">
+												<span class="address"></span></span><span class="if pages">, <span class="pages"></span></span>.
+										</span></span>
+										<span class="if school" style="">
+											<span class="if type"><span class="type"></span>,</span>
+											<span class="school" style=""></span>. 
+										</span>
+											<span class="if url">
+												<br/>[<a class="bibtexVar" href="+url+" style="color:black; font-size:10px" extra="url">
+													<span class="if comment">
+														<span class="comment"></span>
+													</span>
+													<span class="if !comment">
+														<span>link</span>
+													</span>
+												</a>]
+											</span>
+											<span class="if url2">
+												[<a class="bibtexVar" href="+url2+" style="color:black; font-size:10px" extra="url2">
+													<span class="if comment2">
+														<span class="comment2"></span>
+													</span>
+													<span class="if !comment2">
+														<span>link</span>
+													</span>
+												</a>]
+											</span>
+											<span class="if doi">
+												<span class="if !url"><br/></span>[<a class="bibtexVar" href="+doi+" style="color:black; font-size:10px" extra="doi">DOI</a>]
+											</span>										</div>
+										</div>
+										</div>
+								</div>
+									<textarea id="bibtex_input" style="display:none;">
+@InProceedings{BraudCoavouxSoegaard2017,
+  author    = {Chloe Braud and Maximin Coavoux and Anders Søgaard},
+  title     = {Cross-lingual RST Discourse Parsing},
+  booktitle = {Proceedings of EACL 2017},
+  year      = {2017},
+  pages     = {292-304},
+  address   = {Valencia, Spain}
+}
+@InCollection{CarlsonEtAl2003,
+  title                    = {Building a Discourse-Tagged Corpus in the Framework of Rhetorical Structure Theory},
+  author                   = {Lynn Carlson and Daniel Marcu and Mary Ellen Okurowski},
+  booktitle                = {Current and New Directions in Discourse and Dialogue},
+  publisher                = {Kluwer},
+  year                     = {2003},
+
+  address                  = {Dordrecht},
+  pages                    = {85-112},
+  series                   = {Text, Speech and Language Technology 22}
+}
+@Article{MannThompson1988,
+  title                    = {Rhetorical Structure Theory: Toward a Functional Theory of Text Organization},
+  author                   = {William C. Mann and Sandra A. Thompson},
+  journal                  = {Text},
+  year                     = {1988},
+  number                   = {3},
+  pages                    = {243-281},
+  volume                   = {8}
+}
+@InProceedings{MoreyMullerAsher2017,
+  author    = {Mathieu Morey and Philippe Muller and Nicholas Asher},
+  title     = {How Much Progress have we Made on RST Discourse Parsing? A Replication Study of Recent Results on the RST-DT},
+  booktitle = {Proceedings of EMNLP 2017},
+  year      = {2017},
+  pages     = {1319-1324},
+  address   = {Copenhagen, Denmark}
+}
+@Article{TaboadaDas2013,
+  title                    = {Annotation upon Annotation: Adding Signalling Information to a Corpus of Discourse Relations},
+  author                   = {Maite Taboada and Debopam Das},
+  journal                  = {Dialogue and Discourse},
+  year                     = {2013},
+  number                   = {2},
+  pages                    = {249-281},
+  volume                   = {4},
+  doi                      = {https://doi.org/10.5087/dad.2013.211}
+}
+@Book{Zeldes2018,
+  title     = {Multilayer Corpus Studies},
+  publisher = {Routledge},
+  year      = {2018},
+  author    = {Amir Zeldes},
+  series    = {Routledge Advances in Corpus Linguistics 22},
+  address   = {London}
+}									</textarea>
+									<div id="bibtex_display"></div>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+
+									<!--#include virtual="../menu.html"-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<!--<script src="../assets/js/modal.js"></script>-->
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
