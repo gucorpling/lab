@@ -57,7 +57,7 @@ for i, p in enumerate(iterkeys(posts)):
 	date = p
 	post = posts[p]
 	if i > limit -1:
-		if "sticky" not in post:
+		if 'sticky="true"' not in post.lower():
 			continue
 	if post_limit == "all":
 		post = post.replace('"images/','"../images/')  # Handle image src if specified relative to corpling/
