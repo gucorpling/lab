@@ -48,7 +48,7 @@ post_limit = cgi.FieldStorage().getvalue("posts",None)
 if post_limit == "all":
 	limit = 10000
 else:
-	limit = 4
+	limit = 5
 
 limit = min(limit,len(posts))
 output = ""
