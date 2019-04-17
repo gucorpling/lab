@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>What's new in GUM?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong><i class="fa fa-home">&nbsp;</i>corpling@GU</strong></a>
+									<!--
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>-->
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>What's new in GUM?</h1>
+									</header>
+
+									<span class="image main"><img style="max-width:600px; max-height: 400px" src="../images/gum5_header.png" alt="" /></span>
+
+									<p>The first release of <a href="https://corpling.uis.georgetown.edu/gum/">GUM series 5</a> in 2019 brings several new features to our multilayer corpus - this post outlines the most important additions.</p>
+									
+									<h2>What is GUM?</h2>
+									<p><a href="https://corpling.uis.georgetown.edu/gum/">GUM</a> is an open source <b>multilayer corpus</b> of richly annotated web texts from eight text types. The corpus is collected and expanded by students as part of the curriculum in <a href="http://courses.georgetown.edu/index.cfm?CourseID=LING-367">LING-367 Computational Corpus Linguistics</a> at Georgetown University. The selection of text types is meant to represent different communicative purposes, while coming from sources that are readily and openly available (mostly Creative Commons licenses), so that new texts can be annotated and published with ease. </p>
+									
+									
+									<h2>New data</h2>
+
+									<p>After a second year of collecting data from <a href="http://corpling.uis.georgetown.edu/gum/survey_2017.html">four new genres</a>, the corpus is now bigger than ever, and is gradually becoming more balanced:
+
+	<table id="gum_stats">
+            <thead><tr><th>text type</th><th>source</th><th>texts</th><th>tokens</th></tr></thead>
+            <tbody>
+            <tr><td>Interviews</td><td>Wikinews</td><td>19</td><td>18,037</td></tr>
+            <tr><td>News stories</td><td>Wikinews</td><td>21</td><td>14,093</td></tr>
+            <tr><td>Travel guides</td><td>Wikivoyage</td><td>17</td><td>14,955</td></tr>
+            <tr><td>How-to guides</td><td>wikiHow</td><td>19</td><td>16,920</td></tr>
+            <tr><td>Academic writing</td><td>Various</td><td>12</td><td>10,966</td></tr>
+            <tr><td>Biographies</td><td>Wikipedia</td><td>13</td><td>11,562</td></tr>
+            <tr><td>Fiction</td><td>Various</td><td>13</td><td>12,082</td></tr>
+            <tr><td>Forum discussions</td><td>reddit</td><td>12</td><td>10,526</td></tr>
+            </tbody>
+            <tfoot><tr><td>Total</td><td></td><td>126</td><td>109,141</td></tr></tfoot>
+        </table>
+
+<p>This year saw the biggest growth in fiction texts, which can be very challenging to annotate for discourse structure due to possible differences in the communicative functions expressed by the narrator versus discourse motivations found embedded in direct speech.
+
+<h2>Sorting out <i>other</i> sentences</h2>
+
+<p>Our sentence type annotations, which categorize utterances into rough speech act types (declaratives, questions, imperatives...) often didnt match any one prototype, and were given the label <b>other</b>. having a label like <b>other</b> is generally just a last resort, but is often useful for identifying unusual cases and refining the annotation scheme later on; in 2018 we did just that and distinguished cases where multiple sentence types are coordinated by 'and' etc. We now label these with the type <b>multiple</b> vs. truly unusual types, which remain labeled as <b>other</b>.</p>
+
+<p>You can find examples of these types of sentences in our online search interface, ANNIS:</p>
+<ul>
+	<li><a href="https://corpling.uis.georgetown.edu/annis/#_q=c190eXBlPSJvdGhlciI&_c=R1VN&cl=5&cr=5&s=0&l=10"><tt>s_type="other"</tt></a></li>
+	<li><a href="https://corpling.uis.georgetown.edu/annis/#_q=c190eXBlPSJtdWx0aXBsZSI&_c=R1VN&cl=5&cr=5&s=0&l=10"><tt>s_type="multiple"</tt></a></li>
+</ul>
+
+<h2>Reworking the bridging annotations and visualization</h2>
+
+<p>Bridging is a special case of discourse anaphora, where an entity is introduced as already familiar to the reader/hearer based on the mention of a different previously mentioned entity. Annotating bridging helps us to research how definite expressions can be introduced without previous mention, over semantic links such as part-whole - here's an example from GUM:</p>
+
+		<style>
+		#ent1:hover ~ #ent2 { background-color: yellow; }
+		#ent2:hover ~ #ent1 { background-color: yellow; }
+		.entity:hover{background-color: yellow; }
+		</style>
+		<blockquote><p><div id="ent1" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="abstract" class="fa fa-cloud"></i> The games &nbsp;</div> have features like increasing challenges, rules that establish what can and can not be done, and involvement of <div id="ent2" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="person" class="fa fa-male"></i> the player&nbsp; </div> in the quest to gain skills </p>
+		<p>(<b>games</b> imply &rarr; <b>player</b>)</p>
+		<p>[<a href="https://corpling.uis.georgetown.edu/annis/#_q=InBsYXllciIgX29fIGVudGl0eSAtPmJyaWRnZVt0eXBlPSJicmlkZ2U6ZGVmIl0gZW50aXR5IF9vXyAiZ2FtZXMi&_c=R1VN&cl=5&cr=5&s=0&l=10">Open in ANNIS</a>]</p></blockquote>
+
+<p>Our bridging annotations used to be mixed with our coreference annotations, but starting in 2019 we separated them in our datamodel and they can now be viewed separately:</p>
+<div>
+<a href="#" class="image" style="height: 200px"><img style="border: 1px solid black; height: 100%" src="../images/gum5_coref.png" alt="Coreference view" /></a>
+<a href="#" class="image" style="height: 200px"><img style="border: 1px solid black; height: 100%" src="../images/gum5_bridge.png" alt="Bridging view" /></a></div>
+<p><b>Separate coreference and bridging visualizations of the same text. Spans with the same color highlighting are connected via a coreference relation (left) or a bridging relation (right).</b></p>
+
+<p>We are also starting to categorize cases of bridging into multiple subclasses, though this process is in preliminary stages. Unlike version 4 of GUM, which lumped together all kinds of non-strict coreference, the current release of the corpus distinguishes:</p>
+<ul>
+	<li>Definite bridging: <a href="https://corpling.uis.georgetown.edu/annis/#_q=ZW50aXR5IC0-YnJpZGdlW3R5cGU9ImJyaWRnZTpkZWYiXSBlbnRpdHk&_c=R1VN&cl=5&cr=5&s=10&l=10">entity -&gt;bridge[type=‎"bridge:def‎"] entity</a></li>
+	<li>Aggregate mention: <a href="https://corpling.uis.georgetown.edu/annis/#_q=ZW50aXR5IC0-YnJpZGdlW3R5cGU9ImJyaWRnZTphZ2dyIl0gZW50aXR5&_c=R1VN&cl=5&cr=5&s=0&l=10">entity -&gt;bridge[type=‎"bridge:aggr"] entity</a></li>
+	<li>Other types: <a href="https://corpling.uis.georgetown.edu/annis/#_q=ZW50aXR5IC0-YnJpZGdlW3R5cGU9ImJyaWRnZTpvdGhlciJdIGVudGl0eQ&_c=R1VN&cl=5&cr=5&s=0&l=10">entity -&gt;bridge[type=‎"bridge:aggr"] entity</a></li>
+</ul>
+
+<h2>Multiple dependency trees in ANNIS</h2>
+
+<p>
+GUM syntax annotations started out using the <a href="https://nlp.stanford.edu/software/stanford-dependencies.html">Stanford Typed Dependencies</a> scheme, but after the release of <a href="http://universaldependencies.org/">Universal Dependencies</a> (UD), we started releasing an automatically converted UD
+version which takes advantage of other annotation layers to disambiguate trees and prevent errors. In <a href="https://aclweb.org/anthology/W18-4918">this paper</a> we showed that this conversion strategy is almost error free, in part thanks to the amount of information available in the multilayer corpus.</p>
+
+<div>
+<a href="#" class="image" style="height: 200px"><img style="border: 1px solid black; height: 100%" src="../images/gum5_sd_ud.png" alt="Stanford Dependencies and Universal Dependencies" /></a></div>
+<p><b>Automatic multilayer conversion of Stanford Dependencies to Universal Dependencies from <a href="https://aclweb.org/anthology/W18-4918">Peng &amp; Zeldes (2018)</a>.</b></p>
+
+
+<p>In the latest GUM release, both types of dependencies, as well as constituent annotations and universal morphological features can be searched concurrently. You can see these visualizations directly in ANNIS:
+</p>
+<p><b>Stanford Dependencies</b></p>
+<iframe height="300px" width="100%" src="https://corpling.uis.georgetown.edu/annis/?id=b6ae76a0-7675-434e-ab69-fa1d21c2f6f0"></iframe>
+<p><b>Universal Dependencies</b></p>
+<iframe height="300px" width="100%" src="https://corpling.uis.georgetown.edu/annis/?id=53f30ed0-1d61-4191-88f3-bf3a8199ba33"></iframe>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+
+									<!--#include virtual="../menu.html"-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/modal.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
