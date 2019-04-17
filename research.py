@@ -7,7 +7,7 @@ from glob import glob
 
 files = glob("research/*.html")
 
-article_template = """	<li>
+article_template = """	<li class="research_li">
 		<h2><a href="**link**">**title**</a></h2>
 		<div class="research_blob">
 			<div class="research_img_float">
