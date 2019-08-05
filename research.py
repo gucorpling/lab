@@ -53,9 +53,9 @@ for infile in files:
 			first_para = m.group(2)
 			if len(first_para) < 120:
 				first_para += " ..."
+				space = "<br/><br/>"
 			elif len(first_para) > 320:
 				first_para = first_para[:320] + "..."
-				space = "<br/><br/>"
 		#sys.stdout.write("found: "+ img_src)
 
 		article = article_template.replace("**title**",h1).replace("**img**",img_src).replace("**link**","research/"+filename).replace("**lead**",first_para).replace("**space**",space)
