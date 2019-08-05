@@ -40,6 +40,7 @@ for infile in files:
 			continue
 		else:
 			h1 = m.group(1).replace("<br>","").replace("<br/>","")
+			h1 = re.sub(r'<[^<>]+>',"",h1)
 
 		#sys.stdout.write("found: "+ h1)
 
