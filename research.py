@@ -51,7 +51,7 @@ for infile in files:
 		else:
 			img_src = m.group(1)
 			first_para = m.group(2)
-			if len(first_para) < 150:
+			if len(first_para) < 200:
 				space = "<br/><br/>"
 			if len(first_para) < 120:
 				first_para += " ..."
