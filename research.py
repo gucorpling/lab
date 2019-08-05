@@ -14,7 +14,7 @@ article_template = """	<li class="research_li">
 			<div class="research_img_float">
 				<img src="images/**img**" width="280" alt="**title**">
 			</div>
-			<p class="research_lead">**lead**</p>
+			<p class="research_lead">**lead**</p>**space**
 			<a class="button small" href="**link**">More</a>
 		</div>
 """
@@ -44,6 +44,7 @@ for infile in files:
 
 		#sys.stdout.write("found: "+ h1)
 
+		space = ""
 		m = re.search(r'<span class="image main">.*?src="[^"]*?images/([^"]+)".*?</span>.*?<p>(.*?)</p>',text,re.MULTILINE|re.DOTALL)
 		if m is None:
 			continue
@@ -53,10 +54,11 @@ for infile in files:
 			if len(first_para) < 120:
 				first_para += " ..."
 			elif len(first_para) > 320:
-				first_para = first_para[:320] + "...<br/><br/>"
+				first_para = first_para[:320] + "..."
+				space = "<br/><br/>"
 		#sys.stdout.write("found: "+ img_src)
 
-		article = article_template.replace("**title**",h1).replace("**img**",img_src).replace("**link**","research/"+filename).replace("**lead**",first_para)
+		article = article_template.replace("**title**",h1).replace("**img**",img_src).replace("**link**","research/"+filename).replace("**lead**",first_para).replace("**space**",space)
 
 		output += article
 
