@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>A Neural Network Reads the Newspaper</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="research">
+	<script type="text/javascript" src="../assets/js/bibtex_js.js"></script>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong><i class="fa fa-home">&nbsp;</i>Corpling@GU</strong></a>
+									<!--
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>-->
+								</header>
+
+							<!-- Content -->
+								<section class="research">
+									<header class="main"><div><img src="../images/reblog_logo.png"/ style="width:100px"></div>
+										<h1><a href="http://blog.copticscriptorium.org/2018/12/05/new-features-in-our-nlp-pipeline/" rel="bookmark" title="New features in our NLP pipeline">New features in our NLP pipeline</a></h1>
+									</header>
+
+									<span class="image main">
+	<figure>
+		<img src="../images/ebol_hn.png?resize=374%2C240" style="max-width:500px; max-height: 300px; border: 1px solid black"></span>
+									
+									<figcaption class="research" style="max-width:50%"></figcaption></figure><div class="post-content">
+<p>Coptic Scriptorium’s <a href="https://corpling.uis.georgetown.edu/coptic-nlp/">Natural Language Processing</a> (NLP) tools now support two new features:</p>
+<ul>
+<li>Multiword expression recognition</li>
+<li>Detokenization (bound group re-merging)</li>
+</ul>
+<p>Kicking off work on the new phase of our project, these new tools will improve inter-operability of Coptic data across corpora, lexical resources and projects:</p>
+<p><strong>Multiword expressions</strong></p>
+<div class="wp-caption alignnone" id="attachment_422" style="width: 384px"><a href="http://i2.wp.com/blog.copticscriptorium.org/wp-content/uploads/2018/11/ebol_hn.png" rel="attachment wp-att-422"><img alt='The multiword expression ⲉⲃⲟⲗ ϩⲛ "out of" (from Apophthegmata Patrum 27, MOBG EG 67. Image: Österreichische Nationalbibliothek)' class="size-full wp-image-422" data-recalc-dims="1" sizes="(max-width: 374px) 100vw, 374px" src="http://i2.wp.com/blog.copticscriptorium.org/wp-content/uploads/2018/11/ebol_hn.png?resize=374%2C240" srcset="http://i2.wp.com/blog.copticscriptorium.org/wp-content/uploads/2018/11/ebol_hn.png?resize=300%2C193 300w, http://i2.wp.com/blog.copticscriptorium.org/wp-content/uploads/2018/11/ebol_hn.png?w=374 374w"/></a><p class="wp-caption-text">The multiword expression <strong style="font-family: Antinoou;">ⲉⲃⲟⲗ ϩⲛ</strong> “out of” (from Apophthegmata Patrum 27, MOBG EG 67. Image: Österreichische Nationalbibliothek)</p></div>
+<p>Although lemmatization and normalization already offer a good way of finding base forms of Coptic words, many complex expressions cross word borders in Coptic. For example, although it is possible to understand combinations such as <strong style="font-family: Antinoou;">ⲉⲃⲟⲗ</strong> ‘out’ + <strong style="font-family: Antinoou;">ϩⲛ</strong> ‘in’, or <strong style="font-family: Antinoou;">ⲥⲱⲧⲙ</strong> ‘hear’ + <strong style="font-family: Antinoou;">ⲛⲥⲁ</strong> ‘behind’ approximately from the meaning of each word, together they have special senses, such as ‘out of’ and ‘obey’ respectively.  This and similar combinations are distinct enough from their constituents that they receive different lexicon entries in dictionaries, for example in the Coptic Dictionary Online (CDO), compare: <a href="https://corpling.uis.georgetown.edu/coptic-dictionary/results.cgi?quick_search=%E2%B2%A5%E2%B2%B1%E2%B2%A7%E2%B2%99" style="font-family: Antinoou;">ⲥⲱⲧⲙ</a>, <a href="https://corpling.uis.georgetown.edu/coptic-dictionary/entry.cgi?entry=3268&amp;super=1368" style="font-family: Antinoou;">ⲛⲥⲁ</a> and <a href="https://corpling.uis.georgetown.edu/coptic-dictionary/entry.cgi?entry=3814&amp;super=1579" style="font-family: Antinoou;">ⲥⲱⲧⲙ ⲛⲥⲁ</a>.</p>
+<p>Thanks to the availability of the CDO’s <a href="https://github.com/KELLIA/dictionary">data</a>,  the NLP tools can now attempt to detect known multiword expressions, which can then be linked back to the dictionary and used to collect frequencies for complex items. </p>
+<p><strong>Many thanks</strong> to Maxim Kupreyev for his help in setting up multiword expressions in the dictionary, as well as to Frank Feder, So Miyagawa, Sebastian Richter and other KELLIA collaborators for making these lexical resources available!</p>
+<p><strong>Detokenization</strong></p>
+<p>Coptic bound groups have been written with intervening spaces according to a number of similar but subtly different traditions, such as Walter Till’s system and the system employed by Bentley Layton’s  <em>A </em><em>Coptic Grammar</em>, which Coptic Scriptorium employs. The differences between these and other segmentation traditions can create some problems:</p>
+<ol>
+<li>Users searching in multiple corpora may be surprised when queries behave differently due to segmentation differences.</li>
+<li>Machine learning tools trained on one standard degrade in performance when the data they analyze uses a different standard.</li>
+</ol>
+<p>In order to address these issues and have more consistent and more accurately analyzed data, we have added a component to our tools which can attempt to merge bound groups into ‘Laytonian’ bound groups. In Computational Linguistics, re-segmenting a segmented text is referred to as ‘detokenization’, but for our tools this has also been affectionately termed ‘Laytonization’. The new detokenizer has several options to choose from:</p>
+<ol>
+<li><strong>No merging</strong> – this is the behavior of our tools to date, no modifications are undertaken.</li>
+<li><strong>Conservative merging mode</strong> – in conservative merging, only items known to be spelled apart in different segmentations are merged. For example, in the sequence <strong style="font-family: Antinoou;">ϩⲙ ⲡⲏⲓ</strong> “in the-house”, the word <strong style="font-family: Antinoou;">ϩⲙ</strong> “in” is typically spelled apart in Till’s system, but together in Layton’s. This type of sequence would be merged in conservative mode.</li>
+<li><strong>Aggressive merging mode</strong> – in this mode, anything that is most often spelled bound in our training data is merged. This is done even if the segment being bound by the system is not not one that would normally be spelled apart in some other conventional system. For example, the sequence <strong style="font-family: Antinoou;">ⲁ ϥⲥⲱⲧⲙ</strong> “(PAST) he heard”, the past tense marker <strong style="font-family: Antinoou;">ⲁ</strong> is a unit that no Coptic orthographic convention spells apart. It is relatively unlikely that it should stand apart in normal Coptic text in any convention, so in aggressive mode it would be merged as well.</li>
+<li><strong>Segment at merge point</strong> – regardless of the merging mode chosen, if any merging occurs, this option enforces the presence of a morphological boundary at any merge point. This ensures that merged items are always assigned to separate underlying words, and receive part of speech annotations accordingly, even if our machine learning segmenter does not predict that the merged bound group should be segmented in this way.</li>
+</ol>
+<p>The use of these options is expected to correspond more or less to the type of input text: for carefully edited text from a different convention (e.g. Till), conservative merging is with segmentation at merge points is recommended. For ‘messier’ text (e.g. older digitized editions with varying conventions, such as editions by Wallis Bugde, or material from automatic Optical Character Recognition), aggressive merging is advised, and we may not necessarily want to assume that segments should be introduced at merge points.</p>
+<p>We hope these tools will be useful and expect to see them create more consistency, higher accuracy and inter-operability between resources in the near future!</p>
+</div>
+</span>
+</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+
+									<!--#include virtual="../menu.html"-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<!--<script src="../assets/js/modal.js"></script>-->
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
