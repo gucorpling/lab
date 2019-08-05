@@ -6,6 +6,7 @@ from glob import glob
 
 
 files = glob("research/*.html")
+files = sorted(files,reverse=True)  # Reverse sort to get newest first
 
 article_template = """	<li class="research_li">
 		<h2><a href="**link**">**title**</a></h2>
@@ -48,6 +49,10 @@ for infile in files:
 		else:
 			img_src = m.group(1)
 			first_para = m.group(2)
+			if len(first_para) < 120:
+				first_para += " ..."
+			elif len(first_para) > 320:
+				first_para = first_para[:320] + "..."
 		#sys.stdout.write("found: "+ img_src)
 
 		article = article_template.replace("**title**",h1).replace("**img**",img_src).replace("**link**","research/"+filename).replace("**lead**",first_para)
