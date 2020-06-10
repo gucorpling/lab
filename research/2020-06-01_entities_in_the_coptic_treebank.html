@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>A Neural Network Reads the Newspaper</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body id="research">
+	<script type="text/javascript" src="../assets/js/bibtex_js.js"></script>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong><i class="fa fa-home">&nbsp;</i>Corpling@GU</strong></a>
+									<!--
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>-->
+								</header>
+
+							<!-- Content -->
+								<section class="research">
+									<header class="main"><div><a href="http://blog.copticscriptorium.org/"><img src="../images/reblog_logo.png"/ style="width:100px"></a></div>
+										<h1>Entities in the Coptic Treebank</h1>
+									</header>
+
+									<span class="image main">
+	<figure>
+		<img src="../images/entities.png?resize=600%2C216" style="max-width:500px; max-height: 300px; border: 1px solid black"></span>
+									
+									<figcaption class="research" style="max-width:50%"></figcaption></figure><div class="post-content">
+<p><a href="https://i0.wp.com/blog.copticscriptorium.org/wp-content/uploads/2020/05/entities.png" rel="attachment wp-att-539"></a></p>
+<p>With the release of Version 2.6 of Universal Dependencies, our focus has shifted to handling <strong>Named and Non-Named Entity Recognition (NER/NNER) </strong>in Coptic data. As a result of intensive work by the Coptic Scriptorium team in the past few months, the development branch of the Treebank now contains complete entity spans and types for the entire data in the Treebank, which can be accessed <a href="https://github.com/UniversalDependencies/UD_Coptic-Scriptorium/tree/dev">here</a>. Special thanks are due to Lance Martin, Liz Davidson and Mitchell Abrams for all their efforts!</p>
+<p><strong>What’s included?</strong></p>
+<ul>
+<li>All data from the Coptic treebank (78 documents, approx. 46,000 words)</li>
+<li>All spans of text referring to a named or unnamed entity, such as “Emperor Diocletian”, “the old woman” or “his cell”.</li>
+<li>Nested entities contained in other entities, such a <a href="https://github.com/UniversalDependencies/UD_Coptic-Scriptorium/blob/dev/cop_scriptorium-ud-dev.conllu#L12915-L12922">[the kingdom of [the Emperor Diocletian]]</a></li>
+<li style="direction: ltr;">Entity types, divided into the following <strong>10 classes</strong>: (English examples are provided in brackets)</li>
+</ul>
+<div class="" id="wpt-table-1591470838883"></div><script type="text/javascript">(function() {function createTable() {if (window.wpt) {window.wpt.createTable({"_id_div":"wpt-table-1591470838883","_ctrl_url":"https:\/\/blog.copticscriptorium.org\/wp-admin\/admin-ajax.php?action=wpt_load_data&amp;table=536&amp;_wpnonce=520832df9c","width":"100%","height":null,"sorting":true,"selecting":true,"heading":false,"paging":false,"pageSize":"20","autoload":true,"fields":[{"name":"f0","title":"","type":"text","visible":true,"format":"","currency_symbol":""},{"name":"f1","title":"","type":"text","visible":true,"format":"","currency_symbol":""}]});} else {setTimeout(createTable, 100);}}createTable();})();</script>
+<p> </p>
+<p><strong>What do we plan to do with this?</strong></p>
+<p>Entity annotations are a gateway to exposing and linking semantic content information from collections of documents. Having such annotations for all of our Coptic data will allow search by entity types (and ultimately names), enable analysis and comparison of texts based on the quantity, proportion and dispersion of entity types, facilitate identification of textual reuse disregarding either the entities involved or the ways in which they are phrased, and much more.</p>
+<p>Over the course of the summer, our next goals fall into three packages:</p>
+<ol>
+<li><strong>Natural Language Processing (NLP):</strong> Develop high-accuracy automatic entity recognition tools for Coptic based on this data, and make them freely available.</li>
+<li><strong>Corpora:</strong> Enrich all of our available data with automatic entity annotations, which can be corrected and improved iteratively in the future.</li>
+<li><strong>Entity linking:</strong> Leverage the inventory of <strong>named entities</strong> identified in the data to carry out named entity linking with resources such as Wikipedia and other DH project identifiers. This will allow users to find all mentions of a specific person or place, regardless of how they are referred to.</li>
+</ol>
+<p>Since the tools and annotations are based only on Coptic textual input and subsequent automatic NLP, we envision including search and visualization of entity data for all of our corpora, including ones for which we do not have a translation. This means that data whose content could not be easily deciphered without extensive reading of the original Coptic text will become much more easily discoverable, by exploring entities in which researchers are interested.</p>
+<p>Stay tuned for more updates on Coptic entities!</p>
+</div>
+</span>
+</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+
+									<!--#include virtual="../menu.html"-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<!--<script src="../assets/js/modal.js"></script>-->
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
