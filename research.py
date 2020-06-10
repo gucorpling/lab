@@ -55,7 +55,7 @@ for infile in files:
 				space = "<br/><br/>"
 			if len(first_para) < 120:
 				first_para += " ..."
-			elif len(first_para) > 320:
+			elif len(first_para) > 260:
 				first_para = first_para[:320] + "..."
 		#sys.stdout.write("found: "+ img_src)
 
