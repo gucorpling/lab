@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Introducing GUM7!</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style>
+		table.stripes {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#gum_stats{
+	min-width: 300px;
+    max-width: 550px;
+	margin: 0 auto;
+}
+
+table.stripes thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+table.stripes th, table.stripes td {
+    padding: 5px 5px 5px 10px;
+	vertical-align: middle;
+	  display:table-cell;
+}
+
+table.stripes td img {display: table-cell}
+
+table.stripes tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table.stripes tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table.stripes tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+table.stripes tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.genre_logo{height:30px;    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+.cn{padding-left:40px}
+
+tfoot{font-weight: bold}
+		</style>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong><i class="fa fa-home">&nbsp;</i>corpling@GU</strong></a>
+									<!--
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>-->
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>GUM7 &ndash; four added genres, Wikification and more!</h1>
+									</header>
+
+									<span class="image main"><img style="max-width:600px; max-height: 400px" src="../images/gum7_header.png" alt="" /></span>
+
+									<p>The first release of <a href="https://corpling.uis.georgetown.edu/gum/">GUM series 7</a> now adds four more genres to our multilayer corpus, in addition to brand new annotation layers, corrections, and more. This post outlines the main changes and additions to the corpus.</p>
+									
+									<h2>What is GUM?</h2>
+									<p><a href="https://corpling.uis.georgetown.edu/gum/">GUM</a> is an open source <b>multilayer corpus</b> of richly annotated web texts from eight text types. The corpus is collected and expanded by students as part of the curriculum in <a href="http://courses.georgetown.edu/index.cfm?CourseID=LING-367">LING-367 Computational Corpus Linguistics</a> at Georgetown University. The selection of text types is meant to represent different communicative purposes, while coming from sources that are readily and openly available (mostly Creative Commons licenses), so that new texts can be annotated and published with ease. </p>
+									
+									
+									<h2>New data</h2>
+
+									<p>Every three years we change the genres to expand in the next edition of GUM. This year we've started to focus more on spoken materials, and the new genres include <b>face to face converations, political speeches, open access textbooks</b> and <b>YouTube vlogs</b>. This is how the data currently breaks down:</p>
+
+	<table id="gum_stats" class="stripes">
+            <thead><tr><th>Text type</th><th>Source</th><th></th><th>Documents</th><th>Tokens</th></tr></thead>
+            <tbody>
+            <tr><td>Interviews</td><td><a href="https://en.wikinews.org/wiki/Category:Interview">Wikinews</a></td><td><img alt="Wikinews interviews" title="Wikinews interviews" src="../images/wikiinterview_logo.png" class="genre_logo"></td><td class="cn">19</td><td>18,037</td></tr>
+            <tr><td>News stories</td><td><a href="https://en.wikinews.org/wiki/">Wikinews</a></td><td><img alt="Wikinews" title="Wikinews" src="../images/wikinews_logo.png" class="genre_logo"></td><td class="cn">21</td><td>14,094</td></tr>
+            <tr><td>Travel guides</td><td><a href="https://en.wikivoyage.org/">Wikivoyage</a></td><td><img alt="Wikivoyage" title="Wikivoyage" src="../images/wikivoyage_logo.png" class="genre_logo"></td><td class="cn">17</td><td>14,955</td></tr>
+            <tr><td>How-to guides</td><td><a href="https://www.wikihow.com/">wikiHow</a></td><td><img alt="wikiHow" title="wikiHow" src="../images/wikihow_logo.png" class="genre_logo"></td><td class="cn">19</td><td>16,920</td></tr>
+            <tr><td>Academic writing</td><td>Various</td><td><img alt="Creative Commons papers" title="Creative Commons papers" src="../images/academic_logo.svg" class="genre_logo"></td><td class="cn">16</td><td>15,110</td></tr>
+            <tr><td>Biographies</td><td><a href="https://en.wikipedia.org/wiki/Portal:Biography">Wikipedia</a></td><td><img alt="Wikipedia biographies" title="Wikipedia biographies" src="../images/wikipedia_logo.png" class="genre_logo"></td><td class="cn">20</td><td>17,951</td></tr>
+            <tr><td>Fiction</td><td>Various</td><td><img alt="Creative Commons fiction" title="Creative Commons fiction" src="../images/fiction_logo.svg" class="genre_logo"></td><td class="cn">18</td><td>16,307</td></tr>
+            <tr><td>Forum discussions</td><td><a href="https://www.reddit.com/">reddit</a></td><td><img alt="reddit" title="reddit" src="../images/reddit_logo.png" class="genre_logo"></td><td class="cn">18</td><td>16,286</td></tr>
+            <tr><td>Conversations</td><td><a href="https://www.linguistics.ucsb.edu/research/santa-barbara-corpus">UCSB Corpus</a></td><td><img alt="The Santa Barbara Corpus of Spoken American English" title="The Santa Barbara Corpus of Spoken American English" src="../images/conversation_logo.png" class="genre_logo"></td><td class="cn">5</td><td>5,698</td></tr>
+            <tr><td>Political speeches</td><td>Various</td><td><img alt="Political speeches" title="Political speeches" src="../images/speech_logo.svg" class="genre_logo"></td><td class="cn">5</td><td>4,831</td></tr>
+            <tr><td>CC Vlogs</td><td><a href="https://www.youtube.com/">YouTube</a></td><td><img alt="YouTube" title="YouTube" style="height: 20px; margin-top: 5px; margin-bottom: 5px;" src="../images/vlog_logo.svg" class="genre_logo"></td><td class="cn">5</td><td>5,180</td></tr>
+            <tr><td>Textbooks</td><td><a href="https://openstax.org/">OpenStax</a></td><td><img alt="OpenStax Creative Commons textbooks" title="OpenStax Creative Commons textbooks" src="../images/textbook_logo.png" class="genre_logo"></td><td class="cn">5</td><td>5,376</td></tr>
+            </tbody>
+            <tfoot><tr><td>Total</td><td></td><td></td><td class="cn">168</td><td>150,756</td></tr></tfoot>        </table>
+
+<h2>Wikification</h2>
+
+<p>This year we've added a new annotation type, which we've retrofitted our old annotations to include as well: Named Entity Linking, or more specifically <b>Wikification</b>. This adds links to Wikipedia for all named entities that have a corresponding Wikipedia article. Unlike other Wikified datasets, GUM includes not only 'atomic' named spans, where a person's name might be linked to Wikipedia, but thanks to our nested coreference annotations, also all mentions of a wikified entity, including pronominal and common noun cases, as well as mentions within mentions. This means the "she" might be linked to French actress <a href="https://en.wikipedia.org/wiki/Jeanne_Moreau">Jeanne Moreau</a> in context, and that mentions like the [United States [Congress]] will include links to both entities' Wikipedia pages. Many thanks to Yi-Ju Lin for working on this project!</p>
+
+<div>
+<a href="#" class="image" style="height: 200px"><img style="border: 1px solid black; height: 100%" src="../images/wikification.png" alt="Nested Wikification" /></a></div>
+<p><b>Nested Wikification of mentions of Jeanne Moreau, an award she won, and the festival and location where she won it.</b></p>
+
+
+<h2>Totally reworked date/time annotations</h2>
+
+<p>Following work by Nitin Venkateswaran, the new release has much more extensive date/time annotations, including normalization for seasons and parts of the day (e.g. annotating any 'summer' as not before beginning of June, and not after end of August, etc.). The new data follows practices in other time annotated corpora more closely, and will be used to evaluate day/time prediction accuracy for automated datasets, such as our <a href="http://corpling.uis.georgetown.edu/gum/amalgum.html">Amalgum corpus</a>.
+</p>
+
+<h2>New SOTA neural constituent parsing and function labels</h2>
+
+<p>Constituent trees in GUM are automatically parsed, except for a small subset of manually annotated test documents, using high accuracy parsing from gold POS tags. Recent advances in parsing have meant that we can now get even more accurate parses, which are now produced by the state of the art neural parser from <a href="https://github.com/KhalilMrini/LAL-Parser">Mrini et al.</a> (adapted to the GUM build bot by Nitin Venkateswaran).
+</p>
+<p>Another addition in this version is the incorporation of consituent function labels following the original Penn Treebank phrase function labels, such as <tt>NP-SBJ</tt> for subject NPs, subtypes of adverbials and PPs (<tt>ADVP-TMP, ADVP-MNR, PP-LOC, PP-DIR</tt> etc.). The GUM build bot now projects function labels onto the constituent trees, which are searchable in <a href="https://corpling.uis.georgetown.edu/annis/#_q=Y2F0PSJWUCIgPltmdW5jPSJNTlIiXSBjYXQ9IkFEVlAi&_c=R1VN&cl=5&cr=5&s=0&l=10">ANNIS</a> as shown below.</p>
+
+<div>
+<a href="#" class="image" style="height: 200px"><img style="border: 1px solid black; height: 100%" src="../images/cat_func.png" alt="Constituent trees with function labels" /></a></div>
+<p><b>Constituent trees enriched with functional labels, such as <tt>SBJ, NOM, DIR</tt>.</b></p>
+
+<h2>Better consistency and new morphology</h2>
+
+<p>Since GUM6, we have been working on better convergence with existing standards, including revising RST segmentation to match the RST Discourse Treebank exactly, as well as convergence in POS tagging and dependency parsing with OntoNotes and the English Web Treebank. </p>
+
+<p>As part of our efforts to match UD annotation conventions, we have completely reimplemented our morphological tagging pipeline, which now outputs all features expected by Universal Dependencies, including propagation of person, number and case information, including on unmarked verb forms (<tt>VBD, VBP</tt>), which now indicate the subject person and number.</p> 
+
+<div>
+<a href="#" class="image" style="height: 200px"><img style="border: 1px solid black; height: 100%" src="../images/morph_grid.png" alt="Morphological annotation grid" /></a></div>
+<p><b>Morphological annotations following the UD standard.</b></p>
+
+<h2>Separate annotation of split antecedents</h2>
+
+<p>GUM7 now better separates split antecedent anaphora, illustrated below, with a special information status value <tt>split</tt>, as well as a dedicated edge type.</p>
+
+		<style>
+		#ent1:hover ~ #ent2 { background-color: yellow; }
+		#ent2:hover ~ #ent1 { background-color: yellow; }
+		.entity:hover{background-color: yellow; }
+		</style>
+		<blockquote><p><div id="ent1" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="abstract" class="fa fa-male"></i> Goode &nbsp;</div>  has been in a relationship with <div id="ent1" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="abstract" class="fa fa-male"></i>Sophie Dymoke</div> since 2005.  <div id="ent2" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="person" class="fa fa-male"></i> They&nbsp; </div> married in 2014.</p>
+		<p>(<b>They</b> split-refers to &rarr; <b>Goode, Sophie Symoke</b>)</p>
+		<p>[<a href="https://corpling.uis.georgetown.edu/annis/#_q=aW5mc3RhdD0ic3BsaXQiIC0-YnJpZGdlIGVudGl0eSAtPmhlYWQgIkdvb2RlIiAuKiBlbnRpdHkgJiAjMSAtPmJyaWRnZSAjNA&_c=R1VN&cl=5&cr=5&s=0&l=10">Open in ANNIS</a>]</p></blockquote>
+
+
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+
+									<!--#include virtual="../menu.html"-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/modal.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
