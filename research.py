@@ -66,4 +66,7 @@ for infile in files:
 output = page_template.replace("**content**",output)
 
 print("Content-type:text/html\r\n\r\n")
-print(output.encode("utf8"))
+if sys.version_info[0] < 3:
+	print(output.encode("utf8"))
+else:
+	sys.stdout.buffer.write(output.encode("utf8"))
