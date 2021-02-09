@@ -1,8 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-print("Content-type:text/html\r\n\r\n")
-
 import io, sys, re, os, cgi
 from glob import glob
 from collections import OrderedDict
@@ -67,6 +65,8 @@ for i, p in enumerate(iterkeys(posts)):
 output = posts_template.replace("**posts**",output)
 
 if sys.version_info[0] < 3:
+	print("Content-type:text/html\r\n\r\n")
 	print(output.encode("utf8"))
 else:
+	sys.stdout.buffer.write("Content-type:text/html\r\n\r\n".encode("utf8"))
 	sys.stdout.buffer.write(output.encode("utf8"))
