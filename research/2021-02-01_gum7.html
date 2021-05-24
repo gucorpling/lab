@@ -134,6 +134,14 @@ tfoot{font-weight: bold}
 <p><b>Nested Wikification of mentions of Jeanne Moreau, an award she won, and the festival and location where she won it.</b></p>
 
 
+<h2>Enhanced Universal Dependencies</h2>
+
+<p>The new <b>enhanced dependencies</b> layer adds an additional graph representation with structure sharing, which more closely reflects semantic argument structure (see <a href="https://universaldependencies.org/u/overview/enhanced-syntax.html">the guidelines</a>). This layer is produced semi-automatically by propagating structure sharing across coordination, subject and object control and more, and is then adjusted including the introduction of 'virtual' tokens to cover ellipsis, gapping, right-node-raising and related phenomena. This layer also provides augmented label types including lexical subtypes, such as <tt>obl:on</tt> to indicate an oblique PP modifier headed by 'on', or <tt>conj:or</tt> to indicate a disjunction marked by 'or'.</p>
+
+	    <img src="../images/GUM_edep_anno.png" width="350" border="1" alt="enhanced dependencies" style="display: block; margin: 20px 10px 10px 30px; "/>
+	    <img src="../images/GUM_ellipsis_anno.png" width="350" border="1" alt="virtual ellipsis token" style="display: block; margin: 20px 10px 10px 30px; "/>
+	    
+
 <h2>Totally reworked date/time annotations</h2>
 
 <p>Following work by Nitin Venkateswaran, the new release has much more extensive date/time annotations, including normalization for seasons and parts of the day (e.g. annotating any 'summer' as not before beginning of June, and not after end of August, etc.). The new data follows practices in other time annotated corpora more closely, and will be used to evaluate day/time prediction accuracy for automated datasets, such as our <a href="http://corpling.uis.georgetown.edu/gum/amalgum.html">Amalgum corpus</a>.
