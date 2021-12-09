@@ -1282,7 +1282,7 @@ if (!window.jQuery || !window.moment) {
         //Add moment to the webpage for dates
         var mo = document.createElement('script');
         mo.type = 'text/javascript';
-        mo.src = 'moment.min.js';
+        mo.src = 'assets/js/moment.min.js';
         document.getElementsByTagName('head')[0].appendChild(mo);
     }
 
