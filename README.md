@@ -1,3 +1,3 @@
 # Corpling@GU Lab
 
-Repository for the [Corpling@GU web page](https://corpling.uis.georgetown.edu/corpling/)
+Repository for the [Corpling@GU web page](https://gucorpling.org/corpling/)

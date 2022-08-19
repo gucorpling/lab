@@ -97,10 +97,10 @@ tfoot{font-weight: bold}
 
 									<span class="image main"><img style="max-width:600px; max-height: 400px" src="../images/gum7_header.png" alt="" /></span>
 
-									<p>The first release of <a href="https://corpling.uis.georgetown.edu/gum/">GUM series 7</a> now adds four more genres to our multilayer corpus, in addition to brand new annotation layers, corrections, and more. This post outlines the main changes and additions to the corpus.</p>
+									<p>The first release of <a href="https://gucorpling.org/gum/">GUM series 7</a> now adds four more genres to our multilayer corpus, in addition to brand new annotation layers, corrections, and more. This post outlines the main changes and additions to the corpus.</p>
 									
 									<h2>What is GUM?</h2>
-									<p><a href="https://corpling.uis.georgetown.edu/gum/">GUM</a> is an open source <b>multilayer corpus</b> of richly annotated web texts from eight text types. The corpus is collected and expanded by students as part of the curriculum in <a href="http://courses.georgetown.edu/index.cfm?CourseID=LING-367">LING-367 Computational Corpus Linguistics</a> at Georgetown University. The selection of text types is meant to represent different communicative purposes, while coming from sources that are readily and openly available (mostly Creative Commons licenses), so that new texts can be annotated and published with ease. </p>
+									<p><a href="https://gucorpling.org/gum/">GUM</a> is an open source <b>multilayer corpus</b> of richly annotated web texts from eight text types. The corpus is collected and expanded by students as part of the curriculum in <a href="http://courses.georgetown.edu/index.cfm?CourseID=LING-367">LING-367 Computational Corpus Linguistics</a> at Georgetown University. The selection of text types is meant to represent different communicative purposes, while coming from sources that are readily and openly available (mostly Creative Commons licenses), so that new texts can be annotated and published with ease. </p>
 									
 									
 									<h2>New data</h2>
@@ -144,14 +144,14 @@ tfoot{font-weight: bold}
 
 <h2>Totally reworked date/time annotations</h2>
 
-<p>Following work by Nitin Venkateswaran, the new release has much more extensive date/time annotations, including normalization for seasons and parts of the day (e.g. annotating any 'summer' as not before beginning of June, and not after end of August, etc.). The new data follows practices in other time annotated corpora more closely, and will be used to evaluate day/time prediction accuracy for automated datasets, such as our <a href="http://corpling.uis.georgetown.edu/gum/amalgum.html">Amalgum corpus</a>.
+<p>Following work by Nitin Venkateswaran, the new release has much more extensive date/time annotations, including normalization for seasons and parts of the day (e.g. annotating any 'summer' as not before beginning of June, and not after end of August, etc.). The new data follows practices in other time annotated corpora more closely, and will be used to evaluate day/time prediction accuracy for automated datasets, such as our <a href="http://gucorpling.org/gum/amalgum.html">Amalgum corpus</a>.
 </p>
 
 <h2>New SOTA neural constituent parsing and function labels</h2>
 
 <p>Constituent trees in GUM are automatically parsed, except for a small subset of manually annotated test documents, using high accuracy parsing from gold POS tags. Recent advances in parsing have meant that we can now get even more accurate parses, which are now produced by the state of the art neural parser from <a href="https://github.com/KhalilMrini/LAL-Parser">Mrini et al.</a> (adapted to the GUM build bot by Nitin Venkateswaran).
 </p>
-<p>Another addition in this version is the incorporation of consituent function labels following the original Penn Treebank phrase function labels, such as <tt>NP-SBJ</tt> for subject NPs, subtypes of adverbials and PPs (<tt>ADVP-TMP, ADVP-MNR, PP-LOC, PP-DIR</tt> etc.). The GUM build bot now projects function labels onto the constituent trees, which are searchable in <a href="https://corpling.uis.georgetown.edu/annis/#_q=Y2F0PSJWUCIgPltmdW5jPSJNTlIiXSBjYXQ9IkFEVlAi&_c=R1VN&cl=5&cr=5&s=0&l=10">ANNIS</a> as shown below.</p>
+<p>Another addition in this version is the incorporation of consituent function labels following the original Penn Treebank phrase function labels, such as <tt>NP-SBJ</tt> for subject NPs, subtypes of adverbials and PPs (<tt>ADVP-TMP, ADVP-MNR, PP-LOC, PP-DIR</tt> etc.). The GUM build bot now projects function labels onto the constituent trees, which are searchable in <a href="https://gucorpling.org/annis/#_q=Y2F0PSJWUCIgPltmdW5jPSJNTlIiXSBjYXQ9IkFEVlAi&_c=R1VN&cl=5&cr=5&s=0&l=10">ANNIS</a> as shown below.</p>
 
 <div>
 <a href="#" class="image" style="height: 200px"><img style="border: 1px solid black; height: 100%" src="../images/cat_func.png" alt="Constituent trees with function labels" /></a></div>
@@ -178,7 +178,7 @@ tfoot{font-weight: bold}
 		</style>
 		<blockquote><p><div id="ent1" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="abstract" class="fa fa-male"></i> Goode &nbsp;</div>  has been in a relationship with <div id="ent1" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="abstract" class="fa fa-male"></i>Sophie Dymoke</div> since 2005.  <div id="ent2" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="person" class="fa fa-male"></i> They&nbsp; </div> married in 2014.</p>
 		<p>(<b>They</b> split-refers to &rarr; <b>Goode, Sophie Symoke</b>)</p>
-		<p>[<a href="https://corpling.uis.georgetown.edu/annis/#_q=aW5mc3RhdD0ic3BsaXQiIC0-YnJpZGdlIGVudGl0eSAtPmhlYWQgIkdvb2RlIiAuKiBlbnRpdHkgJiAjMSAtPmJyaWRnZSAjNA&_c=R1VN&cl=5&cr=5&s=0&l=10">Open in ANNIS</a>]</p></blockquote>
+		<p>[<a href="https://gucorpling.org/annis/#_q=aW5mc3RhdD0ic3BsaXQiIC0-YnJpZGdlIGVudGl0eSAtPmhlYWQgIkdvb2RlIiAuKiBlbnRpdHkgJiAjMSAtPmJyaWRnZSAjNA&_c=R1VN&cl=5&cr=5&s=0&l=10">Open in ANNIS</a>]</p></blockquote>
 
 
 
