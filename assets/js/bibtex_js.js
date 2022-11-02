@@ -308,7 +308,7 @@ function BibtexDisplay() {
     //Regex Searchs used by fixValue in proper order
     this.regExps = [];
     this.regExps.push(new RegExp("\{\\\\\\W*\\w+\}")); // 1 {\[]}
-    this.regExps.push(new RegExp("\\\\\\W*\{\\w+\}")); // 2 \[]{\[]}
+    this.regExps.push(new RegExp("\\\\(?:\\W*|v)\{\\w+\}")); // 2 \[]{\[]}
     this.regExps.push(new RegExp("\\\\\\W*\\w+\\s")); // 3 \[]
     this.regExps.push(new RegExp("\\\\\\W*\\w+")); // 4 \[]
     this.regExps.push(new RegExp("\\\\(?![:\\\\\])\\W{1}")); // 5
