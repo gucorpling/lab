@@ -145,40 +145,59 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 										</div>
 								</div>
 							 <textarea id="bibtex_input" style="display:none;">
-@inproceedings{liu-zeldes-2023-eacl,
-    title = "Why Can't Discourse Parsing Generalize? A Thorough Investigation of the Impact of Data Diversity",
-    author = "Yang Janet Liu and Amir Zeldes",
-    booktitle = "Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+
+@inproceedings{liu-zeldes-2023-GUMSum,
+    title = "{GUMSum}: Multi-Genre Data and Evaluation for English Abstractive Summarization",
+    author = "Yang Janet Liu and
+      Zeldes, Amir",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+}
+@inproceedings{liu-zeldes-2023-cant,
+    title = "Why Can{'}t Discourse Parsing Generalize? A Thorough Investigation of the Impact of Data Diversity",
+    author = "Liu, Yang Janet  and
+      Zeldes, Amir",
+    booktitle = "Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics",
     month = may,
     year = "2023",
     address = "Dubrovnik, Croatia",
     publisher = "Association for Computational Linguistics",
-    url = "https://arxiv.org/abs/2302.06488",
-    abstract = "Recent advances in discourse parsing performance create the impression that, as in other NLP tasks, performance for high-resource languages such as English is finally becoming reliable. In this paper we demonstrate that this is not the case, and thoroughly investigate the impact of data diversity on RST parsing stability. We show that state-of-the-art architectures trained on the standard English newswire benchmark do not generalize well, even within the news domain. Using the two largest RST corpora of English with text from multiple genres, we quantify the impact of genre diversity in training data for achieving generalization to text types unseen during training. Our results show that a heterogeneous training regime is critical for stable and generalizable models, across parser architectures. We also provide error analyses of model outputs and out-of-domain performance. To our knowledge, this study is the first to fully evaluate cross-corpus RST parsing generalizability on complete trees, examine between-genre degradation within an RST corpus, and investigate the impact of genre diversity in training data composition. ",
+    url = "https://aclanthology.org/2023.eacl-main.227",
+    pages = "3112--3130",
+    abstract = "Recent advances in discourse parsing performance create the impression that, as in other NLP tasks, performance for high-resource languages such as English is finally becoming reliable. In this paper we demonstrate that this is not the case, and thoroughly investigate the impact of data diversity on RST parsing stability. We show that state-of-the-art architectures trained on the standard English newswire benchmark do not generalize well, even within the news domain. Using the two largest RST corpora of English with text from multiple genres, we quantify the impact of genre diversity in training data for achieving generalization to text types unseen during training. Our results show that a heterogeneous training regime is critical for stable and generalizable models, across parser architectures. We also provide error analyses of model outputs and out-of-domain performance. To our knowledge, this study is the first to fully evaluate cross-corpus RST parsing generalizability on complete trees, examine between-genre degradation within an RST corpus, and investigate the impact of genre diversity in training data composition.",
 }
-@inproceedings{zeldes-et-al-2022-hebrew-wiki,
+@inproceedings{zeldes-etal-2022-second,
     title = "A Second Wave of {UD} {H}ebrew Treebanking and Cross-Domain Parsing",
-    author = "Amir Zeldes and Nick Howell and Noam Ordan and Yifat Ben Moshe",
-    booktitle = "Proceedings of EMNLP 2022",
+    author = "Zeldes, Amir  and
+      Howell, Nick  and
+      Ordan, Noam  and
+      Ben Moshe, Yifat",
+    booktitle = "Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing",
+    month = dec,
     year = "2022",
-    address = "Abu Dhabi, UAE",
+    address = "Abu Dhabi, United Arab Emirates",
     publisher = "Association for Computational Linguistics",
-    url = "https://arxiv.org/abs/2210.07873",
-    abstract = "     Foundational Hebrew NLP tasks such as segmentation, tagging and parsing, have relied to date on various versions of the Hebrew Treebank (HTB, Sima'an et al. 2001). However, the data in HTB, a single-source newswire corpus, is now over 30 years old, and does not cover many aspects of contemporary Hebrew on the web. This paper presents a new, freely available UD treebank of Hebrew stratified from a range of topics selected from Hebrew Wikipedia. In addition to introducing the corpus and evaluating the quality of its annotations, we deploy automatic validation tools based on grew (Guillaume, 2021), and conduct the first cross domain parsing experiments in Hebrew. We obtain new state-of-the-art (SOTA) results on UD NLP tasks, using a combination of the latest language modelling and some incremental improvements to existing transformer based approaches. We also release a new version of the UD HTB matching annotation scheme updates from our new corpus. ",
-}		
-@inproceedings{peng_gcdt_2022,
-	title = {{GCDT}: {A} {Chinese} {RST} {Treebank} for {Multigenre} and {Multilingual} {Discourse} {Parsing}},
-	shorttitle = {{GCDT}},
-	url = {http://arxiv.org/abs/2210.10449},
- address="Online",
- 	publisher = {Association for Computational Linguistics},
-month=nov,
-year=2022,
- booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing (AACL-IJCNLP 2022)",
-	abstract = {A lack of large-scale human-annotated data has hampered the hierarchical discourse parsing of Chinese. In this paper, we present GCDT, the largest hierarchical discourse treebank for Mandarin Chinese in the framework of Rhetorical Structure Theory (RST). GCDT covers over 60K tokens across five genres of freely available text, using the same relation inventory as contemporary RST treebanks for English. We also report on this dataset's parsing experiments, including state-of-the-art (SOTA) scores for Chinese RST parsing and RST parsing on the English GUM dataset, using cross-lingual training in Chinese and English with multilingual embeddings.},
-	author = {Peng, Siyao and Liu, Yang Janet and Zeldes, Amir},
-	keywords = {Computer Science - Computation and Language},
-}						 
+    url = "https://aclanthology.org/2022.emnlp-main.292",
+    pages = "4331--4344",
+    abstract = "Foundational Hebrew NLP tasks such as segmentation, tagging and parsing, have relied to date on various versions of the Hebrew Treebank (HTB, Sima{'}an et al. 2001). However, the data in HTB, a single-source newswire corpus, is now over 30 years old, and does not cover many aspects of contemporary Hebrew on the web. This paper presents a new, freely available UD treebank of Hebrew stratified from a range of topics selected from Hebrew Wikipedia. In addition to introducing the corpus and evaluating the quality of its annotations, we deploy automatic validation tools based on grew (Guillaume, 2021), and conduct the first cross domain parsing experiments in Hebrew. We obtain new state-of-the-art (SOTA) results on UD NLP tasks, using a combination of the latest language modelling and some incremental improvements to existing transformer based approaches. We also release a new version of the UD HTB matching annotation scheme updates from our new corpus.",
+}	
+@inproceedings{peng-etal-2022-gcdt,
+    title = "{GCDT}: A {C}hinese {RST} Treebank for Multigenre and Multilingual Discourse Parsing",
+    author = "Peng, Siyao  and
+      Liu, Yang Janet  and
+      Zeldes, Amir",
+    booktitle = "Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 12th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)",
+    month = nov,
+    year = "2022",
+    address = "Online only",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.aacl-short.47",
+    pages = "382--391",
+    abstract = "A lack of large-scale human-annotated data has hampered the hierarchical discourse parsing of Chinese. In this paper, we present GCDT, the largest hierarchical discourse treebank for Mandarin Chinese in the framework of Rhetorical Structure Theory (RST). GCDT covers over 60K tokens across five genres of freely available text, using the same relation inventory as contemporary RST treebanks for English. We also report on this dataset{'}s parsing experiments, including state-of-the-art (SOTA) scores for Chinese RST parsing and RST parsing on the English GUM dataset, using cross-lingual training in Chinese and English with multilingual embeddings.",
+}					 
 @inproceedings{zabokrtsky-etal-2022-findings,
     title = "Findings of the Shared Task on Multilingual Coreference Resolution",
     author = "\v{Z}abokrtsk\'{y}, Zden\'{e}k  and
