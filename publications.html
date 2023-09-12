@@ -146,27 +146,70 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 								</div>
 							 <textarea id="bibtex_input" style="display:none;">
 
-@inproceedings{GENTLE2023LAW,
-    title = {{GENTLE: A Genre-Diverse Multilayer Challenge Set for English NLP and Linguistic Evaluation}},
-    author = "Aoyama, Tatsuya and Behzad, Shabnam and Gessler, Luke and Levine, Lauren and Lin, Jessica and Liu, Yang Janet and Peng, Siyao and Zhu, Yilun and Zeldes, Amir",
-    month = "july",
+@inproceedings{sigdial2023rsterrors,
+    title = "What's Hard in English RST Parsing? Predictive Models for Error Analysis",
+    author = "Liu, Yang Janet and Aoyama, Tatsuya  and
+      Zeldes, Amir",
+    booktitle = "Proceedings of the 24th Annual Meeting of the Special Interest Group on Discourse and Dialogue",
+    month = sep,
+    year = "2023",
+    address = "Prague, Czechia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://arxiv.org/abs/2309.04940",
+}
+@inproceedings{braud-etal-2023-disrpt,
+    title = "The {DISRPT} 2023 Shared Task on Elementary Discourse Unit Segmentation, Connective Detection, and Relation Classification",
+    author = "Braud, Chlo{\'e}  and
+      Liu, Yang Janet  and
+      Metheniti, Eleni  and
+      Muller, Philippe  and
+      Rivi{\`e}re, Laura  and
+      Rutherford, Attapol  and
+      Zeldes, Amir",
+    booktitle = "Proceedings of the 3rd Shared Task on Discourse Relation Parsing and Treebanking (DISRPT 2023)",
+    month = jul,
     year = "2023",
     address = "Toronto, Canada",
-    booktitle = "Proceedings of the 17th Linguistic Annotation Workshop",
-    publisher = "Association for Computational Linguistics",
-    url = "https://arxiv.org/abs/2306.01966",
-    abstract = "We present GENTLE, a new mixed-genre English challenge corpus totaling 17K tokens and consisting of 8 unusual text types for out-of domain evaluation: dictionary entries, esports commentaries, legal documents, medical notes, poetry, mathematical proofs, syllabuses, and threat letters. GENTLE is manually annotated for a variety of popular NLP tasks, including syntactic dependency parsing, entity recognition, coreference resolution, and discourse parsing. We evaluate state-of-the-art NLP systems on GENTLE and find severe degradation for at least some genres in their performance on all tasks, which indicates GENTLE's utility as an evaluation dataset for NLP systems."
+    publisher = "The Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.disrpt-1.1",
+    doi = "10.18653/v1/2023.disrpt-1.1",
+    pages = "1--21",
+    abstract = "In 2023, the third iteration of the DISRPT Shared Task (Discourse Relation Parsing and Treebanking) was held, dedicated to the underlying units used in discourse parsing across formalisms. Following the success of the 2019and 2021 tasks on Elementary Discourse Unit Segmentation, Connective Detection, and Relation Classification, this iteration has added 10 new corpora, including 2 new languages (Thai and Italian) and 3 discourse treebanks annotated in the discourse dependency representation in addition to the previously included frameworks: RST, SDRT, and PDTB. In this paper, we review the data included in the Shared Task, which covers 26 datasets across 13 languages, survey and compare submitted systems, and report on system performance on each task for both annotated and plain-tokenized versions of the data.",
 }
-@inproceedings{liu-zeldes-2023-GUMSum,
-    title = "{GUMSum}: Multi-Genre Data and Evaluation for English Abstractive Summarization",
-    author = "Yang Janet Liu and
+@inproceedings{aoyama-etal-2023-gentle,
+    title = "{GENTLE}: A Genre-Diverse Multilayer Challenge Set for {E}nglish {NLP} and Linguistic Evaluation",
+    author = "Aoyama, Tatsuya  and
+      Behzad, Shabnam  and
+      Gessler, Luke  and
+      Levine, Lauren  and
+      Lin, Jessica  and
+      Liu, Yang Janet  and
+      Peng, Siyao  and
+      Zhu, Yilun  and
+      Zeldes, Amir",
+    booktitle = "Proceedings of the 17th Linguistic Annotation Workshop (LAW-XVII)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.law-1.17",
+    doi = "10.18653/v1/2023.law-1.17",
+    pages = "166--178",
+    abstract = "We present GENTLE, a new mixed-genre English challenge corpus totaling 17K tokens and consisting of 8 unusual text types for out-of-domain evaluation: dictionary entries, esports commentaries, legal documents, medical notes, poetry, mathematical proofs, syllabuses, and threat letters. GENTLE is manually annotated for a variety of popular NLP tasks, including syntactic dependency parsing, entity recognition, coreference resolution, and discourse parsing. We evaluate state-of-the-art NLP systems on GENTLE and find severe degradation for at least some genres in their performance on all tasks, which indicates GENTLE{'}s utility as an evaluation dataset for NLP systems.",
+}
+@inproceedings{liu-zeldes-2023-gumsum,
+    title = "{GUMS}um: Multi-Genre Data and Evaluation for {E}nglish Abstractive Summarization",
+    author = "Liu, Yang Janet  and
       Zeldes, Amir",
     booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
     month = jul,
     year = "2023",
     address = "Toronto, Canada",
     publisher = "Association for Computational Linguistics",
-    url = "http://arxiv.org/abs/2306.11256",
+    url = "https://aclanthology.org/2023.findings-acl.593",
+    doi = "10.18653/v1/2023.findings-acl.593",
+    pages = "9315--9327",
+    abstract = "Automatic summarization with pre-trained language models has led to impressively fluent results, but is prone to {`}hallucinations{'}, low performance on non-news genres, and outputs which are not exactly summaries. Targeting ACL 2023{'}s {`}Reality Check{'} theme, we present GUMSum, a small but carefully crafted dataset of English summaries in 12 written and spoken genres for evaluation of abstractive summarization. Summaries are highly constrained, focusing on substitutive potential, factuality, and faithfulness. We present guidelines and evaluate human agreement as well as subjective judgments on recent system outputs, comparing general-domain untuned approaches, a fine-tuned one, and a prompt-based approach, to human performance. Results show that while GPT3 achieves impressive scores, it still underperforms humans, with varying quality across genres. Human judgments reveal different types of errors in supervised, prompted, and human-generated summaries, shedding light on the challenges of producing a good summary.",
 }
 @inproceedings{liu-zeldes-2023-cant,
     title = "Why Can{'}t Discourse Parsing Generalize? A Thorough Investigation of the Impact of Data Diversity",
