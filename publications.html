@@ -146,16 +146,25 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 								</div>
 							 <textarea id="bibtex_input" style="display:none;">
 
-@inproceedings{sigdial2023rsterrors,
-    title = "What's Hard in English RST Parsing? Predictive Models for Error Analysis",
-    author = "Liu, Yang Janet and Aoyama, Tatsuya  and
+@inproceedings{liu-etal-2023-whats,
+    title = "What{'}s Hard in {E}nglish {RST} Parsing? Predictive Models for Error Analysis",
+    author = "Liu, Yang Janet  and
+      Aoyama, Tatsuya  and
       Zeldes, Amir",
-    booktitle = "Proceedings of the 24th Annual Meeting of the Special Interest Group on Discourse and Dialogue",
+    editor = "Stoyanchev, Svetlana  and
+      Joty, Shafiq  and
+      Schlangen, David  and
+      Dusek, Ondrej  and
+      Kennington, Casey  and
+      Alikhani, Malihe",
+    booktitle = "Proceedings of the 24th Meeting of the Special Interest Group on Discourse and Dialogue",
     month = sep,
     year = "2023",
     address = "Prague, Czechia",
     publisher = "Association for Computational Linguistics",
-    url = "https://arxiv.org/abs/2309.04940",
+    url = "https://aclanthology.org/2023.sigdial-1.3",
+    pages = "31--42",
+    abstract = "Despite recent advances in Natural Language Processing (NLP), hierarchical discourse parsing in the framework of Rhetorical Structure Theory remains challenging, and our understanding of the reasons for this are as yet limited. In this paper, we examine and model some of the factors associated with parsing difficulties in previous work: the existence of implicit discourse relations, challenges in identifying long-distance relations, out-of-vocabulary items, and more. In order to assess the relative importance of these variables, we also release two annotated English test-sets with explicit correct and distracting discourse markers associated with gold standard RST relations. Our results show that as in shallow discourse parsing, the explicit/implicit distinction plays a role, but that long-distance dependencies are the main challenge, while lack of lexical overlap is less of a problem, at least for in-domain parsing. Our final model is able to predict where errors will occur with an accuracy of 76.3{\%} for the bottom-up parser and 76.6{\%} for the top-down parser.",
 }
 @inproceedings{braud-etal-2023-disrpt,
     title = "The {DISRPT} 2023 Shared Task on Elementary Discourse Unit Segmentation, Connective Detection, and Relation Classification",
