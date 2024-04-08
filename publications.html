@@ -371,6 +371,26 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 	year = {2022},
 	pages = {103--110},
 }
+@inproceedings{gessler-zeldes-2022-microbert,
+    title = "{M}icro{BERT}: Effective Training of Low-resource Monolingual {BERT}s through Parameter Reduction and Multitask Learning",
+    author = "Gessler, Luke  and
+      Zeldes, Amir",
+    editor = {Ataman, Duygu  and
+      Gonen, Hila  and
+      Ruder, Sebastian  and
+      Firat, Orhan  and
+      G{\"u}l Sahin, G{\"o}zde  and
+      Mirzakhalov, Jamshidbek},
+    booktitle = "Proceedings of the 2nd Workshop on Multi-lingual Representation Learning (MRL)",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates (Hybrid)",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2022.mrl-1.9",
+    doi = "10.18653/v1/2022.mrl-1.9",
+    pages = "86--99",
+    abstract = "BERT-style contextualized word embedding models are critical for good performance in most NLP tasks, but they are data-hungry and therefore difficult to train for low-resource languages. In this work, we investigate whether a combination of greatly reduced model size and two linguistically rich auxiliary pretraining tasks (part-of-speech tagging and dependency parsing) can help produce better BERTs in a low-resource setting. Results from 7 diverse languages indicate that our model, MicroBERT, is able to produce marked improvements in downstream task evaluations, including gains up to 18{\%} for parser LAS and 11{\%} for NER F1 compared to an mBERT baseline, and we achieve these results with less than 1{\%} of the parameter count of a multilingual BERT base{--}sized model. We conclude that training very small BERTs and leveraging any available labeled data for multitask learning during pretraining can produce models which outperform both their multilingual counterparts and traditional fixed embeddings for low-resource languages.",
+}
 @inproceedings{lin-zeldes-2021-wikigum,
     title = {{W}iki{GUM}: Exhaustive Entity Linking for Wikification in 12 Genres},
     author = {Jessica Lin and Amir Zeldes},
