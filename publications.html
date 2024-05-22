@@ -146,15 +146,20 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 								</div>
 							 <textarea id="bibtex_input" style="display:none;">
 
-@inproceedings{lin-zeldes-2024-GUMsley,
-  author    = {Lin, Jessica and  Zeldes, Amir},
-  title     = {GUMsley: Evaluating Entity Salience in Summarization for 12 English Genres},
-  booktitle      = {Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics},
-  month          = {March},
-  year           = {2024},
-  address        = {St. Julians, Malta},
-  publisher      = {Association for Computational Linguistics},
-  url       = {https://arxiv.org/abs/2401.17974}
+@inproceedings{lin-zeldes-2024-gumsley,
+    title = "{GUM}sley: Evaluating Entity Salience in Summarization for 12 {E}nglish Genres",
+    author = "Lin, Jessica  and
+      Zeldes, Amir",
+    editor = "Graham, Yvette  and
+      Purver, Matthew",
+    booktitle = "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2024",
+    address = "St. Julian{'}s, Malta",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.eacl-long.158",
+    pages = "2575--2588",
+    abstract = "As NLP models become increasingly capable of understanding documents in terms of coherent entities rather than strings, obtaining the most salient entities for each document is not only an important end task in itself but also vital for Information Retrieval (IR) and other downstream applications such as controllable summarization. In this paper, we present and evaluate GUMsley, the first entity salience dataset covering all named and non-named salient entities for 12 genres of English text, aligned with entity types, Wikification links and full coreference resolution annotations. We promote a strict definition of salience using human summaries and demonstrate high inter-annotator agreement for salience based on whether a source entity is mentioned in the summary. Our evaluation shows poor performance by pre-trained SOTA summarization models and zero-shot LLM prompting in capturing salient entities in generated summaries. We also show that predicting or providing salient entities to several model architectures enhances performance and helps derive higher-quality summaries by alleviating the entity hallucination problem in existing abstractive summarization.",
 }
 @inproceedings{zhu-etal-2023-incorporating,
     title = "Incorporating Singletons and Mention-based Features in Coreference Resolution via Multi-task Learning for Better Generalization",
