@@ -145,7 +145,124 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 										</div>
 								</div>
 							 <textarea id="bibtex_input" style="display:none;">
-
+@article{10.1162/coli_a_00538,
+    author = {Zeldes, Amir and Aoyama, Tatsuya and Liu, Yang Janet and Peng, Siyao and Das, Debopam and Gessler, Luke},
+    title = "{eRST: A Signaled Graph Theory of Discourse Relations and Organization}",
+    journal = {Computational Linguistics},
+    pages = {1--47},
+    year = {2024},
+    month = {09},
+    abstract = "{In this article we present Enhanced Rhetorical Structure Theory (eRST), a new theoretical framework for computational discourse analysis, based on an expansion of Rhetorical Structure Theory (RST). The framework encompasses discourse relation graphs with tree-breaking, non-projective and concurrent relations, as well as implicit and explicit signals which give explainable rationales to our analyses. We survey shortcomings of RST and other existing frameworks, such as Segmented Discourse Representation Theory (SDRT), the Penn Discourse Treebank (PDTB) and Discourse Dependencies, and address these using constructs in the proposed theory. We provide annotation, search and visualization tools for data, and present and evaluate a freely available corpus of English annotated according to our framework, encompassing 12 spoken and written genres with over 200K tokens. Finally, we discuss automatic parsing, evaluation metrics and applications for data in our framework.}",
+    issn = {0891-2017},
+    url = {https://doi.org/10.1162/coli\_a\_00538},
+    eprint = {https://direct.mit.edu/coli/article-pdf/doi/10.1162/coli\_a\_00538/2470700/coli\_a\_00538.pdf},
+}
+@inproceedings{zhu-etal-2024-splice,
+    title = "{SPLICE}: A Singleton-Enhanced {P}ipe{LI}ne for Coreference {RE}solution",
+    author = "Zhu, Yilun  and
+      Peng, Siyao  and
+      Pradhan, Sameer  and
+      Zeldes, Amir",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1321",
+    pages = "15191--15201",
+    abstract = "Singleton mentions, i.e. entities mentioned only once in a text, are important to how humans understand discourse from a theoretical perspective. However previous attempts to incorporate their detection in end-to-end neural coreference resolution for English have been hampered by the lack of singleton mention spans in the OntoNotes benchmark. This paper addresses this limitation by combining predicted mentions from existing nested NER systems and features derived from OntoNotes syntax trees. With this approach, we create a near approximation of the OntoNotes dataset with all singleton mentions, achieving {\textasciitilde}94{\%} recall on a sample of gold singletons. We then propose a two-step neural mention and coreference resolution system, named SPLICE, and compare its performance to the end-to-end approach in two scenarios: the OntoNotes test set and the out-of-domain (OOD) OntoGUM corpus. Results indicate that reconstructed singleton training yields results comparable to end-to-end systems for OntoNotes, while improving OOD stability (+1.1 avg. F1). We conduct error analysis for mention detection and delve into its impact on coreference clustering, revealing that precision improvements deliver more substantial benefits than increases in recall for resolving coreference chains.",
+}
+@inproceedings{braud-etal-2024-disrpt,
+    title = "{DISRPT}: A Multilingual, Multi-domain, Cross-framework Benchmark for Discourse Processing",
+    author = "Braud, Chlo{\'e}  and
+      Zeldes, Amir  and
+      Rivi{\`e}re, Laura  and
+      Liu, Yang Janet  and
+      Muller, Philippe  and
+      Sileo, Damien  and
+      Aoyama, Tatsuya",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.447",
+    pages = "4990--5005",
+    abstract = "This paper presents DISRPT, a multilingual, multi-domain, and cross-framework benchmark dataset for discourse processing, covering the tasks of discourse unit segmentation, connective identification, and relation classification. DISRPT includes 13 languages, with data from 24 corpora covering about 4 millions tokens and around 250,000 discourse relation instances from 4 discourse frameworks: RST, SDRT, PDTB, and Discourse Dependencies. We present an overview of the data, its development across three NLP shared tasks on discourse processing carried out in the past five years, and the latest modifications and added extensions. We also carry out an evaluation of state-of-the-art multilingual systems trained on the data for each task, showing plateau performance on segmentation, but important room for improvement for connective identification and relation classification. The DISRPT benchmark employs a unified format that we make available on GitHub and HuggingFace in order to encourage future work on discourse processing across languages, domains, and frameworks.",
+}
+@inproceedings{weissweiler-etal-2024-ucxn,
+    title = "{UC}xn: Typologically Informed Annotation of Constructions Atop {U}niversal {D}ependencies",
+    author = {Weissweiler, Leonie  and
+      B{\"o}bel, Nina  and
+      Guiller, Kirian  and
+      Herrera, Santiago  and
+      Scivetti, Wesley  and
+      Lorenzi, Arthur  and
+      Melnik, Nurit  and
+      Bhatia, Archna  and
+      Sch{\"u}tze, Hinrich  and
+      Levin, Lori  and
+      Zeldes, Amir  and
+      Nivre, Joakim  and
+      Croft, William  and
+      Schneider, Nathan},
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1471",
+    pages = "16919--16932",
+    abstract = "The Universal Dependencies (UD) project has created an invaluable collection of treebanks with contributions in over 140 languages. However, the UD annotations do not tell the full story. Grammatical constructions that convey meaning through a particular combination of several morphosyntactic elements{---}for example, interrogative sentences with special markers and/or word orders{---}are not labeled holistically. We argue for (i) augmenting UD annotations with a {`}UCxn{'} annotation layer for such meaning-bearing grammatical constructions, and (ii) approaching this in a typologically informed way so that morphosyntactic strategies can be compared across languages. As a case study, we consider five construction families in ten languages, identifying instances of each construction in UD treebanks through the use of morphosyntactic patterns. In addition to findings regarding these particular constructions, our study yields important insights on methodology for describing and identifying constructions in language-general and language-particular ways, and lays the foundation for future constructional enrichment of UD treebanks.",
+}
+@inproceedings{poesio-etal-2024-universal,
+    title = "Universal Anaphora: The First Three Years",
+    author = "Poesio, Massimo  and
+      Ogrodniczuk, Maciej  and
+      Ng, Vincent  and
+      Pradhan, Sameer  and
+      Yu, Juntao  and
+      Moosavi, Nafise Sadat  and
+      Paun, Silviu  and
+      Zeldes, Amir  and
+      Nedoluzhko, Anna  and
+      Nov{\'a}k, Michal  and
+      Popel, Martin  and
+      {\v{Z}}abokrtsk{\'y}, Zden{\v{e}}k  and
+      Zeman, Daniel",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1484",
+    pages = "17087--17100",
+    abstract = "The aim of the Universal Anaphora initiative is to push forward the state of the art in anaphora and anaphora resolution by expanding the aspects of anaphoric interpretation which are or can be reliably annotated in anaphoric corpora, producing unified standards to annotate and encode these annotations, delivering datasets encoded according to these standards, and developing methods for evaluating models that carry out this type of interpretation. Although several papers on aspects of the initiative have appeared, no overall description of the initiative{'}s goals, proposals and achievements has been published yet except as an online draft. This paper aims to fill this gap, as well as to discuss its progress so far.",
+}
 @inproceedings{lin-zeldes-2024-gumsley,
     title = "{GUM}sley: Evaluating Entity Salience in Summarization for 12 {E}nglish Genres",
     author = "Lin, Jessica  and
