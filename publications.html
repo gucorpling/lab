@@ -368,6 +368,21 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
     pages = "31--42",
     abstract = "Despite recent advances in Natural Language Processing (NLP), hierarchical discourse parsing in the framework of Rhetorical Structure Theory remains challenging, and our understanding of the reasons for this are as yet limited. In this paper, we examine and model some of the factors associated with parsing difficulties in previous work: the existence of implicit discourse relations, challenges in identifying long-distance relations, out-of-vocabulary items, and more. In order to assess the relative importance of these variables, we also release two annotated English test-sets with explicit correct and distracting discourse markers associated with gold standard RST relations. Our results show that as in shallow discourse parsing, the explicit/implicit distinction plays a role, but that long-distance dependencies are the main challenge, while lack of lexical overlap is less of a problem, at least for in-domain parsing. Our final model is able to predict where errors will occur with an accuracy of 76.3{\%} for the bottom-up parser and 76.6{\%} for the top-down parser.",
 }
+@inproceedings{behzad-etal-2023-sentence,
+    title = "Sentence-level Feedback Generation for {E}nglish Language Learners: Does Data Augmentation Help?",
+    author = "Behzad, Shabnam  and
+      Zeldes, Amir  and
+      Schneider, Nathan",
+    editor = "Mille, Simon",
+    booktitle = "Proceedings of the 16th International Natural Language Generation Conference: Generation Challenges",
+    month = sep,
+    year = "2023",
+    address = "Prague, Czechia",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.inlg-genchal.8",
+    pages = "53--59",
+    abstract = "In this paper, we present strong baselines for the task of Feedback Comment Generation for Writing Learning. Given a sentence and an error span, the task is to generate a feedback comment explaining the error. Sentences and feedback comments are both in English. We experiment with LLMs and also create multiple pseudo datasets for the task, investigating how it affects the performance of our system. We present our results for the task along with extensive analysis of the generated comments with the aim of aiding future studies in feedback comment generation for English language learners.",
+}
 @inproceedings{braud-etal-2023-disrpt,
     title = "The {DISRPT} 2023 Shared Task on Elementary Discourse Unit Segmentation, Connective Detection, and Relation Classification",
     author = "Braud, Chlo{\'e}  and
@@ -407,6 +422,25 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
     doi = "10.18653/v1/2023.law-1.17",
     pages = "166--178",
     abstract = "We present GENTLE, a new mixed-genre English challenge corpus totaling 17K tokens and consisting of 8 unusual text types for out-of-domain evaluation: dictionary entries, esports commentaries, legal documents, medical notes, poetry, mathematical proofs, syllabuses, and threat letters. GENTLE is manually annotated for a variety of popular NLP tasks, including syntactic dependency parsing, entity recognition, coreference resolution, and discourse parsing. We evaluate state-of-the-art NLP systems on GENTLE and find severe degradation for at least some genres in their performance on all tasks, which indicates GENTLE{'}s utility as an evaluation dataset for NLP systems.",
+}
+@inproceedings{behzad-etal-2023-elqa,
+    title = "{ELQA}: A Corpus of Metalinguistic Questions and Answers about {E}nglish",
+    author = "Behzad, Shabnam  and
+      Sakaguchi, Keisuke  and
+      Schneider, Nathan  and
+      Zeldes, Amir",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.113",
+    doi = "10.18653/v1/2023.acl-long.113",
+    pages = "2031--2047",
+    abstract = "We present ELQA, a corpus of questions and answers in and about the English language. Collected from two online forums, the {\textgreater}70k questions (from English learners and others) cover wide-ranging topics including grammar, meaning, fluency, and etymology. The answers include descriptions of general properties of English vocabulary and grammar as well as explanations about specific (correct and incorrect) usage examples. Unlike most NLP datasets, this corpus is metalinguistic{---}it consists of language about language. As such, it can facilitate investigations of the metalinguistic capabilities of NLU models, as well as educational applications in the language learning domain. To study this, we define a free-form question answering task on our dataset and conduct evaluations on multiple LLMs (Large Language Models) to analyze their capacity to generate metalinguistic answers.",
 }
 @inproceedings{liu-zeldes-2023-gumsum,
     title = "{GUMS}um: Multi-Genre Data and Evaluation for {E}nglish Abstractive Summarization",
