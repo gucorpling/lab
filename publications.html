@@ -147,10 +147,10 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 							 <textarea id="bibtex_input" style="display:none;">
 @inproceedings{liu-etal-2024-gdtb,
     title = "{GDTB}: Genre Diverse Data for {E}nglish Shallow Discourse Parsing across Modalities, Text Types, and Domains",
-    author = "Liu, Yang Janet  and
-      Aoyama, Tatsuya  and
-      Scivetti, Wesley  and
-      Zhu, Yilun  and
+    author = "Liu, Yang Janet*  and
+      Aoyama, Tatsuya*  and
+      Scivetti, Wesley*  and
+      Zhu, Yilun*  and
       Behzad, Shabnam  and
       Levine, Lauren  and
       Lin, Jessica  and
@@ -165,31 +165,47 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
     address = "Miami, Florida, USA",
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2024.emnlp-main.684",
+    note = "(*equal contribution)", 
     pages = "12287--12303",
     abstract = "Work on shallow discourse parsing in English has focused on the Wall Street Journal corpus, the only large-scale dataset for the language in the PDTB framework. However, the data is not openly available, is restricted to the news domain, and is by now 35 years old. In this paper, we present and evaluate a new open-access, multi-genre benchmark for PDTB-style shallow discourse parsing, based on the existing UD English GUM corpus, for which discourse relation annotations in other frameworks already exist. In a series of experiments on cross-domain relation classification, we show that while our dataset is compatible with PDTB, substantial out-of-domain degradation is observed, which can be alleviated by joint training on both datasets.",
 }
-@inproceedings{behzad-etal-2024-l2qa,
-    title = "To Ask LLMs about English Grammaticality, Prompt Them in a Different Language",
-    author = "Shabnam Behzad and Amir Zeldes and Nathan Schneider",
+
+@inproceedings{behzad-etal-2024-ask,
+    title = "To Ask {LLM}s about {E}nglish Grammaticality, Prompt Them in a Different Language",
+    author = "Behzad, Shabnam  and
+      Zeldes, Amir  and
+      Schneider, Nathan",
+    editor = "Al-Onaizan, Yaser  and
+      Bansal, Mohit  and
+      Chen, Yun-Nung",
     booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2024",
     month = nov,
     year = "2024",
-    address = "Miami, USA",
+    address = "Miami, Florida, USA",
     publisher = "Association for Computational Linguistics",
-    abstract = "In addition to asking questions about facts in the world, some internet users—in particular, second language learners—ask questions about language itself. Depending on their proficiency level and audience, they may pose these questions in an L1 (first language) or an L2 (second language). We investigate how multilingual LLMs perform at crosslingual metalinguistic question answering. Focusing on binary questions about sentence grammaticality constructed from error-annotated learner corpora, we prompt three LLMs (Aya, Llama, and GPT) in multiple languages, including English, German, Korean, Russian, and Ukrainian. Our study reveals that the language of the prompt can significantly affect model performance, and despite English being the dominant training language for all three models, prompting in a different language with questions about English often yields better results.",
+    url = "https://aclanthology.org/2024.findings-emnlp.916",
+    pages = "15622--15634",
+    abstract = "In addition to asking questions about facts in the world, some internet users{---}in particular, second language learners{---}ask questions about language itself. Depending on their proficiency level and audience, they may pose these questions in an L1 (first language) or an L2 (second language). We investigate how multilingual LLMs perform at crosslingual metalinguistic question answering. Focusing on binary questions about sentence grammaticality constructed from error-annotated learner corpora, we prompt three LLMs (Aya, Llama, and GPT) in multiple languages, including English, German, Korean, Russian, and Ukrainian. Our study reveals that the language of the prompt can significantly affect model performance, and despite English being the dominant training language for all three models, prompting in a different language with questions about English often yields better results.",
 }
 
-@inproceedings{levine-zeldes-2024-bridge,
-    title = "Unifying the Scope of Bridging Anaphora Types in English: Bridging Annotations in ARRAU and GUM",
+@inproceedings{levine-zeldes-2024-unifying,
+    title = "Unifying the Scope of Bridging Anaphora Types in {E}nglish: Bridging Annotations in {ARRAU} and {GUM}",
     author = "Levine, Lauren  and
       Zeldes, Amir",
-    booktitle = "Proceedings of The Seventh Workshop on Computational Models of Reference, Anaphora and Coreference (CRAC 2024)",
+    editor = "Ogrodniczuk, Maciej  and
+      Nedoluzhko, Anna  and
+      Poesio, Massimo  and
+      Pradhan, Sameer  and
+      Ng, Vincent",
+    booktitle = "Proceedings of The Seventh Workshop on Computational Models of Reference, Anaphora and Coreference",
     month = nov,
     year = "2024",
-    address = "Miami, USA",
+    address = "Miami",
     publisher = "Association for Computational Linguistics",
-    abstract="Comparing bridging annotations across coreference resources is difficult, largely due to a lack of standardization across definitions and annotation schemas and narrow coverage of disparate text domains across resources. To alleviate domain coverage issues and consolidate schemas, we compare guidelines and use interpretable predictive models to examine the bridging instances annotated in the GUM, GENTLE and ARRAU corpora. Examining these cases, we find that there is a large difference in types of phenomena annotated as bridging. Beyond theoretical results, we release a harmonized, subcategorized version of the test sets of GUM, GENTLE and the ARRAU Wall Street Journal data to promote meaningful and reliable evaluation of bridging resolution across domains.",
+    url = "https://aclanthology.org/2024.crac-1.5",
+    pages = "41--51",
 }
+
 @inproceedings{levine-etal-2024-lacuna,
     title = "Lacuna Language Learning: Leveraging {RNN}s for Ranked Text Completion in Digitized {C}optic Manuscripts",
     author = "Levine, Lauren  and
