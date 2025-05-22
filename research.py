@@ -31,7 +31,7 @@ page_template = """<section class="research">
 output = ""
 
 for infile in files:
-	if "template" not in infile and "gum5" not in infile:  # Skip template and older GUM5 description on main page
+	if "template" not in infile and "gum5" not in infile and "gum7" not in infile:  # Skip template and older GUM5 description on main page
 		text = io.open(infile,encoding="utf8").read()
 		filename = os.path.basename(infile)
 

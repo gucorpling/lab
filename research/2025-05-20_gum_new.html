@@ -1,0 +1,423 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>What's new in GUM?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<style>
+		table.stripes {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#gum_stats{
+	min-width: 300px;
+    max-width: 550px;
+	margin: 0 auto;
+}
+
+table.stripes thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+table.stripes th, table.stripes td {
+    padding: 5px 5px 5px 10px;
+	vertical-align: middle;
+	  display:table-cell;
+}
+
+table.stripes td img {display: table-cell}
+
+table.stripes tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+table.stripes tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table.stripes tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+table.stripes tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.genre_logo{height:30px;    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+.cn{padding-left:40px}
+
+tfoot{font-weight: bold}
+
+#rstrels > li {margin-bottom: 0px; font-weight:bold}
+#rstrels > li >ul {margin-bottom: 0px;font-weight:normal}
+
+/* Remove default list bullets */
+ul.rstrels, ul.rstrels ul {
+  list-style: none;
+  padding-left: 1em;
+  margin: 0;
+}
+
+/* Style for top-level clickable label */
+.collapser {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 1em;
+}
+
+.collapser::before {
+  content: "►";
+  position: absolute;
+  left: 0;
+}
+
+/* When expanded, change triangle direction */
+.collapser.expanded::before {
+  content: "▼";
+}
+
+/* Hide nested <ul> by default */
+ul.rstrels ul {
+  display: none;
+  margin-top: 0.25em;
+  padding-left: 1.2em;
+}
+
+/* Show nested list when parent li has .expanded */
+li.expanded > ul {
+  display: block;
+}
+
+/* Style for level 2 list items */
+ul.rstrels li ul li::before {
+  content: "- ";
+  position: relative;
+  left: -0.5em;
+}
+		</style>
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="../index.html" class="logo"><strong><i class="fa fa-home">&nbsp;</i>corpling@GU</strong></a>
+									<!--
+									<ul class="icons">
+										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
+									</ul>-->
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>What's new in GUM?</h1>
+									</header>
+
+									<span class="image main"><img style="max-width:600px; max-height: 400px" src="../images/gum_new_header.png" alt="" /></span>
+
+
+									
+									<h2>What is GUM?</h2>
+									<p><a href="https://gucorpling.org/gum/">GUM</a> is an open source <b>multilayer corpus</b> of richly annotated web texts from eight text types. The corpus is collected and expanded by students as part of the curriculum in <a href="http://courses.georgetown.edu/index.cfm?CourseID=LING-4427">LING-4427 Computational Corpus Linguistics</a> at Georgetown University. The selection of text types is meant to represent different communicative purposes, while coming from sources that are readily and openly available (mostly Creative Commons licenses), so that new texts can be annotated and published with ease. </p>
+									
+									<p>We add new data every year, and every three years we change the genres to expand in the next edition of GUM. This is how the data currently breaks down:</p>
+
+       <table id="gum_stats" class="stripes">
+            <thead><tr><th>Text type</th><th>Source</th><th></th><th>Docs</th><th>Tokens</th></tr></thead>
+            <tbody>
+            </tbody>
+            <tr><td>Academic writing</td><td>Various</td><td><img alt="Creative Commons papers" title="Creative Commons papers" src="https://gucorpling.org/gum/img/academic_logo.svg" class="genre_logo"></td><td class="cn">18</td><td>17,169</td></tr>
+            <tr><td>Biographies</td><td><a href="https://en.wikipedia.org/wiki/Portal:Biography">Wikipedia</a></td><td><img alt="Wikipedia biographies" title="Wikipedia biographies" src="https://gucorpling.org/gum/img/wikipedia_logo.png" class="genre_logo"></td><td class="cn">20</td><td>18,213</td></tr>
+            <tr><td>CC Vlogs</td><td><a href="https://www.youtube.com/">YouTube</a></td><td><img alt="YouTube" title="YouTube" style="height: 20px; margin-top: 5px; margin-bottom: 5px;" src="https://gucorpling.org/gum/img/vlog_logo.svg" class="genre_logo"></td><td class="cn">15</td><td>16,864</td></tr>
+            <tr><td>Conversations</td><td><a href="https://www.linguistics.ucsb.edu/research/santa-barbara-corpus">UCSB Corpus</a></td><td><img alt="The Santa Barbara Corpus of Spoken American English" title="The Santa Barbara Corpus of Spoken American English" src="https://gucorpling.org/gum/img/conversation_logo.png" class="genre_logo"></td><td class="cn">15</td><td>17,932</td></tr>
+            <tr><td>Courtroom transcripts</td><td>Various</td><td><img alt="Courtroom transcripts" title="Courtroom transcripts" src="https://gucorpling.org/gum/img/court_logo.png" class="genre_logo"></td><td class="cn">9</td><td>11,148</td></tr>
+            <tr><td>Essays</td><td>Various</td><td><img alt="Essays" title="Essays" src="https://gucorpling.org/gum/img/essay_logo.png" class="genre_logo"></td><td class="cn">9</td><td>10,842</td></tr>
+            <tr><td>Fiction</td><td>Various</td><td><img alt="Creative Commons fiction" title="Creative Commons fiction" src="https://gucorpling.org/gum/img/fiction_logo.svg" class="genre_logo"></td><td class="cn">19</td><td>17,511</td></tr>
+            <tr><td>Forum</td><td><a href="https://www.reddit.com/">reddit</a></td><td><img alt="reddit" title="reddit" src="https://gucorpling.org/gum/img/reddit_logo.png" class="genre_logo"></td><td class="cn">18</td><td>16,364</td></tr>
+            <tr><td>How-to guides</td><td><a href="https://www.wikihow.com/">wikiHow</a></td><td><img alt="wikiHow" title="wikiHow" src="https://gucorpling.org/gum/img/wikihow_logo.png" class="genre_logo"></td><td class="cn">19</td><td>17,081</td></tr>
+            <tr><td>Interviews</td><td><a href="https://en.wikinews.org/wiki/Category:Interview">Wikinews</a></td><td><img alt="Wikinews interviews" title="Wikinews interviews" src="https://gucorpling.org/gum/img/wikiinterview_logo.png" class="genre_logo"></td><td class="cn">19</td><td>18,196</td></tr>
+            <tr><td>Letters</td><td>Various</td><td><img alt="Letters" title="Letter" src="https://gucorpling.org/gum/img/letter_logo.png" class="genre_logo"></td><td class="cn">12</td><td>9,989</td></tr>
+            <tr><td>News stories</td><td><a href="https://en.wikinews.org/wiki/">Wikinews</a></td><td><img alt="Wikinews" title="Wikinews" src="https://gucorpling.org/gum/img/wikinews_logo.png" class="genre_logo"></td><td class="cn">24</td><td>17,186</td></tr>
+            <tr><td>Podcasts</td><td>Various</td><td><img alt="Podcasts" title="Podcasts" src="https://gucorpling.org/gum/img/podcast_logo.png" class="genre_logo"></td><td class="cn">10</td><td>11,986</td></tr>
+            <tr><td>Political speeches</td><td>Various</td><td><img alt="Political speeches" title="Political speeches" src="https://gucorpling.org/gum/img/speech_logo.svg" class="genre_logo"></td><td class="cn">15</td><td>16,720</td></tr>
+            <tr><td>Textbooks</td><td><a href="https://openstax.org/">OpenStax</a></td><td><img alt="OpenStax Creative Commons textbooks" title="OpenStax Creative Commons textbooks" src="https://gucorpling.org/gum/img/textbook_logo.png" class="genre_logo"></td><td class="cn">15</td><td>16,693</td></tr>
+            <tr><td>Travel guides</td><td><a href="https://en.wikivoyage.org/">Wikivoyage</a></td><td><img alt="Wikivoyage" title="Wikivoyage" src="https://gucorpling.org/gum/img/wikivoyage_logo.png" class="genre_logo"></td><td class="cn">18</td><td>16,515</td></tr>
+            <tr><td><b>Total GUM</b></td><td></td><td></td><td class="cn">255</td><td>250,409</td></tr>
+            <tr><td><b>OOD <a href="gentle.html">GENTLE</a></b></td><td></td><td></td><td class="cn">26</td><td>17,799</td></tr>
+            <tfoot><tr><td>All partitions</td><td></td><td></td><td class="cn">281</td><td>268,208</td></tr></tfoot>
+        </table>
+
+									<h2>Version 11</h2>
+									<p>In addition to new documents in the same genres introduced in V10, the release of version 11 introduced an expansion to the summarization and salience annotations in GUM: documents now include 5 aligned summaries each. For the development and test sets, all summaries were written by humans using the <a href="https://wiki.gucorpling.org/gum/summarization">summarization guidelines</a>, and for the training set, LLM-generated summaries were manually corrected by humans to conform to the guidelines.</p>
+									
+									<p>With the new summaries available, the <b>salience annotation</b> scheme in the corpus changed from binary labels (based on whether an entity was mentioned in the summary), to a graded salience labels based on scalar summary-worthiness: documents entities are each aligned to the summaries that mention them, producing a salience score between 0 (not mentioned in any summary) and 5 (mentioned in all summaries). You can read more about these annotations, including evaluations of LLM accuracy and a hybrid system to predict entity salience, in <a href="https://arxiv.org/abs/2504.10792">this paper</a>.</p>
+
+											<img src="../images/GUM_sage_gpt4o.png" width="600" border="1" alt="GPT4o performance on finding the top 3 most salient entities per document by entity type" style="display: block; margin: 20px 10px 10px 30px; "/>
+											<p><b>GPT4o 3-shot performance on finding the top 3 most salient entities per document by entity type.</b></p>
+
+
+									<h2>Version 10</h2>
+									<p>After three cycles working on conversations, vlogs, political speeches and textbooks, GUM V10 introduced 3 new genres, bringing the total up to 12. The newly added genres are again split between spoken and written text types and cover: <b>courtroom transcripts, argumentative essays, letters and podcasts</b>. This version also saw the introduction of the alternative PDTB v3 style shallow discourse relation annotation layer, released under the name GDTB: The Georgetown Discourse Treebank.</p>
+									
+									<h3>GDTB shallow discourse relations</h3>
+									<p>While Enhanced Rhetorical Structure Theory (eRST) interprets documents as a hierarchical graph structure, linking spans of text called Elementary Discourse Units (EDUs) through nested rhetorical relations, the Penn Discourse Treebank approach analyzes relations in isolation (without hierarchy) and focuses on pairwise links between spans that are either linked explicitly by a connective (e.g. "but" or "on the other hand"), or adjacent spans for which such a connective could be inserted. With the release of GDTB data following version 3 of the PDTB annotation guidelines, GUM can be used to directly compare how RST and PDTB based analyses converge and differ in describing discourse relations in text. </p>
+									
+											<img src="../images/GUM_gdtb_anno.png" width="600" border="1" alt="GDTB shallow discourse relations" style="display: block; margin: 20px 10px 10px 30px; "/>
+											<p><b>Shallow discourse relation annotations in the GDTB layer of GUM.</b></p>
+
+									<h2>Version 9</h2>
+									<p>Version 9 of GUM has more data from the same genres as Version 8, which were introduced in Version 7, but focuses on new annotations and an expansion of the RST framework called eRST (Enhanced Rhetorical Structure Theory). New annotation types in this version include: abstractive summaries for each document (later expanded to 5 summaries, see above), binary salience annotations (later expanded to graded salience, see above), Construction Grammar annotations, and morphological annotations such as morphological segmentation (MSeg) and foreign language annotations. </p>
+									
+									<h3>eRST - Enhanced Rhetorical Structure Theory</h3>
+									<p>With the addition of <a href="https://gucorpling.org/erst/">eRST</a>, discourse graphs in the corpus have been enhanced to include multiple concurrent and non-projective discourse relations superimposed on the RST tree, as shown in the figure below. The eRST graphs also include typed and sub-categorized signal annotations indicating how each discourse relation is signaled, including discourse markers (connectives like "but" for contrastive relations or "then" for temporal sequence), lexical signals, coherence based on coreference, graphical signals, syntactic devices and more. For example, the question in the figure is signaled by a the wh-word "why", by the subject-auxiliary inversion ("why did she") and by the graphical questions mark. These annotations allow us to study relation signaling strategies and ambiguity across genres. To learn more about eRST, check out <a href="https://aclanthology.org/2025.cl-1.3/">our CL journal paper</a>!</p>
+									
+											<img src="../images/eRST_fragment.png" width="600" border="1" alt="An eRST graph fragment" style="display: block; margin: 20px 10px 10px 30px; "/>
+											<p><b>An eRST graph fragment. Numbers next to edges indicate how many signals have been identified. Signal categories and their positions are indicated by colored highlights. Tree-breaking secondary edges are drawn in blue.</b></p>
+
+									<h3>Abstractive summaries and binary salience</h3>
+									<p>Beginning with Version 9, each document in GUM received one abstractive summary following <a href="https://wiki.gucorpling.org/gum/summarization">strict guidelines</a> - summaries are restricted to a single sentence, max 380 characters, and should preserve word choices from the document while only mentioning things mentioned in the document itself. These summaries allowed us to study <a href="https://aclanthology.org/2023.findings-acl.593/">how summarization works across genres</a>, and formed the basis of our initial round of <a href="https://aclanthology.org/2024.eacl-long.158/">binary salience labels</a>, using the idea that if an entity is salient to a document, then it will be difficult to summarize it without mentioning it.</p>
+									
+									<h3>Constructions (UCxn) and morphology</h3>
+									<p>In Version 9.2, we added Construction Grammar annotations using the new <a href="https://aclanthology.org/2024.lrec-main.1471/">UCxn</a> scheme, marking up constructions such as resultatives ("hammer the metal flat"), causal excess ("so big that it fell over") and more - see the complete current list <a href="https://wiki.gucorpling.org/gum/cxn">here</a>. </p>
+									<p>This version also saw the introduction of morphological segmentation information for tokens base on <a href="https://unimorph.github.io/">Unimorph</a>, illustrated below:</p>
+									
+									<ul>
+									<li>books -&gt; book-s</li>
+									<li>explanation -&gt; explan-ation</li>
+									<li>baseball -&gt; base-ball</li>
+									<li>coworkers -&gt; co-work-er-s</li>
+									<li>conceptualizing -&gt; concept-ual-iz-ing</li>
+									</ul>
+
+									<h2>Version 8</h2>
+									<p>In Version 8 of GUM, we introduced a reworked hierarchical system of RST discourse relations (32 labels), added entity annotations according to Centering Theory, updated the Universal Dependencies scheme for syntax annotations, added <a href="https://en.wikipedia.org/wiki/Wikidata">WikiData identifiers</a> to the Wikification annotations, and expanded the data with more documents in the same genres introduced in Version 7.
+									
+									<h3>RST relations - new hierarchical system</h3>
+									
+									<p>Beginning with Version 8, the RST discourse relation inventory in GUM is hierarchical, including 15 major types and 32 total subtypes:</p>
+									
+<table style="table-layout: fixed">
+<tr>
+<td style="max-width: 50%; min-width: 10%; width: 50% !important">
+<ul class="rstrels">
+	<li><span class="collapser">Adversative</span>
+		<ul>
+		<li>antithesis (SN/NS) - R is meant to prefer N as an alternative to S</li>
+		<li>concession (SN/NS) - R is meant to look past an incompatibility of N with S</li>
+		<li>contrast (NN) - W presents multiple Ns as incompatible, but of equal prominence</li>
+		</ul></li>
+	<li><span class="collapser">Attribution</span>
+		<ul>
+		<li>positive (SN/NS) - S states a source for the information in N</li>
+		<li>negative (SN/NS) - S states that a potential source is NOT a source of the information in N</li>
+		</ul></li>
+	<li><span class="collapser">Causal</span>
+		<ul>
+		<li>cause (SN/NS) - S is the cause of N (and N is more prominent)</li>
+		<li>result (SN/NS) - S is the result of N (or: N is the cause of S, and N is more prominent)</li>
+		</ul></li>
+	<li><span class="collapser">Context</span>
+		<ul>
+		<li>background (SN/NS) - S provides prerequisite information to increase R's understanding of N</li>
+		<li>circumstance (SN/NS) - S details circumstances (often spatio-temporal) under which N applies</li>
+		</ul></li>
+	<li><span class="collapser">Contingency</span>
+		<ul>
+		<li>condition (SN/NS) - N occurs (or not) depending on S</li>
+		</ul></li>
+	<li><span class="collapser">Elaboration</span>
+		<ul>
+		<li>attribute (NS) - S gives additional information about a participant within N (not on the entire proposition in N)</li>
+		<li>additional (NS) - S gives additional information about the proposition in N as a whole</li>
+		</ul></li>
+	<li><span class="collapser">Explanation</span>
+		<ul>
+		<li>evidence (SN/NS) - S provides evidence which increases R's belief in N</li>
+		<li>justify (SN/NS) - S increases R's acceptance of W's right to say N</li>
+		<li>motivation (SN/NS) - S is meant to influence R's willingness to act according to N</li>
+		</ul></li>
+	<li><span class="collapser">Evaluation</span>
+		<ul>
+		<li>comment (SN/NS) - S provides an assessment of N by W (R does not have to share this assessment)</li>
+		</ul></li>
+</ul>
+</td>
+<td style="max-width: 50%; min-width: 10%; width: 50%">
+<ul class="rstrels">
+	<li><span class="collapser">Joint</span>
+		<ul>
+		<li>disjunction (NN) - W presents multiple Ns which can be regarded as interchangeable alternatives</li>
+		<li>list (NN) - W presents multiple Ns in parallel which are additive, of equal prominence, and of equivalent purpose</li>
+		<li>sequence (NN) - Multiple Ns form a temporally ordered sequence of events presented in chronological order</li>
+		<li>other (NN) - a collection of unlike Ns of equal prominence, but of disparate (non-equivalent) discourse purpose</li>
+		</ul></li>
+	<li><span class="collapser">Mode</span>
+		<ul>
+		<li>manner (SN/NS) - S indicates the manner in which N happens</li>
+		<li>means (SN/NS) - S indicates the means by which N happens</li>
+		</ul></li>
+	<li><span class="collapser">Organization</span>
+		<ul>
+		<li>heading (SN) - S prepared R for N using an explicit text organizing device such as a heading</li>
+		<li>phatic (SN/NS) - S prepares R for N by holding the floor for W, without contributing propositional content</li>
+		<li>preparation (SN) - covers all other forms of S units primarily used to signal an upcoming N</li>
+		</ul></li>
+	<li><span class="collapser">Purpose</span>
+		<ul>
+		<li>attribute (SN/NS) - S gives the purpose of a participant within N (not the entire propostion in N)</li>
+		<li>goal (SN/NS) - the proposition in N as a whole is initiated or exists in order to realize S</li>
+		</ul></li>
+	<li><span class="collapser">Restatement</span>
+		<ul>
+		<li>partial (NS) - S partly realizes the same role and content as a previous N</li>
+		<li>repetition (NN) - Multiple Ns of equal prominence realize the same role and content</li>
+		</ul></li>
+	<li><span class="collapser">Topic</span>
+		<ul>
+		<li>question (SN) - S steers the discourse topic by posing a question to which N is the answer</li>
+		<li>solutionhood (SN/NS) - S steers the discourse topic by posing a problem, to which N presents a solution</li>
+		</ul></li>
+	<li><span class="collapser">Same-unit (NN)</span> - connects parts of a discontinuous discourse unit (this is not a discourse relation)</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<script>
+document.querySelectorAll('.collapser').forEach(collapser => {
+  collapser.addEventListener('click', () => {
+    const li = collapser.parentElement;
+    li.classList.toggle('expanded');
+    collapser.classList.toggle('expanded');
+  });
+});
+</script>
+
+<h3>Centering annotations</h3>
+
+<p>Centering Theory is a model of local discourse coherence that explains how speakers maintain and shift attention between entities across sentences. Each sentence is associated with a set of forward-looking centers (Cf), which are the entities it introduces or mentions, ranked by prominence (typically grammatical roles like subject > object). One of these entities is designated as the preferred center (Cp), and the unique backward-looking center (Cb) connects the sentence to the previous one by identifying the entity currently in focus. The theory classifies transitions between sentences—such as Continue (same Cb and Cp), Retain (same Cb but different Cp), and Shift (different Cb)—based on the relationship between the Cb of the current sentence and that of the previous sentence, as well as how the current Cp aligns with them. These transitions help predict discourse coherence and pronoun resolution preferences.</p>
+
+<p>Starting in Version 8 of GUM, all entities are ranked for Cf status in each sentence, and the unique Cb is selected if available. Entities are given annotations such as Cf3 (rank 3 forward-looking center), or Cf1*, where the * indicates that this is also the backwards-looking center. Transitions between sentences are computed based on these using the seven transition types summarized in Poesio et al. (2004).
+
+	    <img src="../images/GUM8_centering.png" width="600" border="1" alt="Centering Theory annotations in GUM8" style="display: block; margin: 20px 10px 10px 30px; "/>
+		<p><b>Centering Theory annotations in GUM8.</b></p>
+		
+<p>We can see how transitions vary between genres quite strongly - the following association plot of Chi Squared residuals indicates for example that biographies follow Centering Theory coherence most closely by strongly preferring "continue" transitions, while conversations contain the most disjointed "null" transitions.</p>
+									
+										    <img src="../images/GUM8_transitions.svg" width="600" border="1" alt="Centering Theory transitions vs. genres in GUM8" style="display: block; margin: 20px 10px 10px 30px; "/>
+											<p><b>Centering Theory transitions vs. genres in GUM8.</b></p>
+											
+									<h2>Version 7</h2>
+									
+																		<p>The release of <a href="https://gucorpling.org/gum/">GUM series 7</a> added four more genres to our multilayer corpus, in addition to brand new annotation layers, corrections, and more.</p>
+																		<p> Since version 7 we've started to focus more on spoken materials, and the new genres include <b>face to face converations, political speeches, open access textbooks</b> and <b>YouTube vlogs</b>.
+
+<h3>Wikification</h3>
+
+<p>This version added a new annotation type, which we've retrofitted our old annotations to include as well: Named Entity Linking, or more specifically <b>Wikification</b>. This adds links to Wikipedia for all named entities that have a corresponding Wikipedia article. Unlike other Wikified datasets, GUM includes not only 'atomic' named spans, where a person's name might be linked to Wikipedia, but thanks to our nested coreference annotations, also all mentions of a wikified entity, including pronominal and common noun cases, as well as mentions within mentions. This means the "she" might be linked to French actress <a href="https://en.wikipedia.org/wiki/Jeanne_Moreau">Jeanne Moreau</a> in context, and that mentions like the [United States [Congress]] will include links to both entities' Wikipedia pages. Many thanks to 
+Jessica Yi-Ju Lin for working on this project!</p>
+
+<div>
+<a href="#" class="image" style="height: 200px"><img style="border: 1px solid black; height: 100%" src="../images/wikification.png" alt="Nested Wikification" /></a></div>
+<p><b>Nested Wikification of mentions of Jeanne Moreau, an award she won, and the festival and location where she won it.</b></p>
+
+
+<h3>Enhanced Universal Dependencies</h3>
+
+<p>The new <b>enhanced dependencies</b> layer adds an additional graph representation with structure sharing, which more closely reflects semantic argument structure (see <a href="https://universaldependencies.org/u/overview/enhanced-syntax.html">the guidelines</a>). This layer is produced semi-automatically by propagating structure sharing across coordination, subject and object control and more, and is then adjusted including the introduction of 'virtual' tokens to cover ellipsis, gapping, right-node-raising and related phenomena. This layer also provides augmented label types including lexical subtypes, such as <tt>obl:on</tt> to indicate an oblique PP modifier headed by 'on', or <tt>conj:or</tt> to indicate a disjunction marked by 'or'.</p>
+
+	    <img src="../images/GUM_edep_anno.png" width="350" border="1" alt="enhanced dependencies" style="display: block; margin: 20px 10px 10px 30px; "/>
+	    <img src="../images/GUM_ellipsis_anno.png" width="350" border="1" alt="virtual ellipsis token" style="display: block; margin: 20px 10px 10px 30px; "/>
+	    
+
+<h3>Totally reworked date/time annotations</h3>
+
+<p>Following work by Nitin Venkateswaran, the new release has much more extensive date/time annotations, including normalization for seasons and parts of the day (e.g. annotating any 'summer' as not before beginning of June, and not after end of August, etc.). The new data follows practices in other time annotated corpora more closely, and will be used to evaluate day/time prediction accuracy for automated datasets, such as our <a href="https://gucorpling.org/gum/amalgum.html">AMALGUM corpus</a>.
+</p>
+
+<h3>New SOTA neural constituent parsing and function labels</h3>
+
+<p>Constituent trees in GUM are automatically parsed, except for a small subset of manually annotated test documents, using high accuracy parsing from gold POS tags. Recent advances in parsing have meant that we can now get even more accurate parses, which are now produced by the state of the art neural parser from <a href="https://github.com/KhalilMrini/LAL-Parser">Mrini et al.</a> (adapted to the GUM build bot by Nitin Venkateswaran).
+</p>
+<p>Another addition in this version is the incorporation of consituent function labels following the original Penn Treebank phrase function labels, such as <tt>NP-SBJ</tt> for subject NPs, subtypes of adverbials and PPs (<tt>ADVP-TMP, ADVP-MNR, PP-LOC, PP-DIR</tt> etc.). The GUM build bot now projects function labels onto the constituent trees, which are searchable in <a href="https://gucorpling.org/annis/#_q=Y2F0PSJWUCIgPltmdW5jPSJNTlIiXSBjYXQ9IkFEVlAi&_c=R1VN&cl=5&cr=5&s=0&l=10">ANNIS</a> as shown below.</p>
+
+<div>
+<a href="#" class="image" style="height: 200px"><img style="border: 1px solid black; height: 100%" src="../images/cat_func.png" alt="Constituent trees with function labels" /></a></div>
+<p><b>Constituent trees enriched with functional labels, such as <tt>SBJ, NOM, DIR</tt>.</b></p>
+
+<h3>Better consistency and new morphology</h3>
+
+<p>Since GUM6, we have been working on better convergence with existing standards, including revising RST segmentation to match the RST Discourse Treebank exactly, as well as convergence in POS tagging and dependency parsing with OntoNotes and the English Web Treebank. </p>
+
+<p>As part of our efforts to match UD annotation conventions, we have completely reimplemented our morphological tagging pipeline, which now outputs all features expected by Universal Dependencies, including propagation of person, number and case information, including on unmarked verb forms (<tt>VBD, VBP</tt>), which now indicate the subject person and number.</p> 
+
+<div>
+<a href="#" class="image" style="height: 200px"><img style="border: 1px solid black; height: 100%" src="../images/morph_grid.png" alt="Morphological annotation grid" /></a></div>
+<p><b>Morphological annotations following the UD standard.</b></p>
+
+<h3>Separate annotation of split antecedents</h3>
+
+<p>Since GUM7 the corpus better separates split antecedent anaphora, illustrated below, with a special information status value <tt>split</tt>, as well as a dedicated edge type.</p>
+
+		<style>
+		#ent1:hover ~ #ent2 { background-color: yellow; }
+		#ent2:hover ~ #ent1 { background-color: yellow; }
+		.entity:hover{background-color: yellow; }
+		</style>
+		<blockquote><p><div id="ent1" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="abstract" class="fa fa-male"></i> Goode &nbsp;</div>  has been in a relationship with <div id="ent1" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="abstract" class="fa fa-male"></i>Sophie Dymoke</div> since 2005.  <div id="ent2" class="entity" style="border: 2px solid royalblue; padding: 2px; display: inline-block; position: relative; padding-left: 12px;"><i title="person" class="fa fa-male"></i> They&nbsp; </div> married in 2014.</p>
+		<p>(<b>They</b> split-refers to &rarr; <b>Goode, Sophie Symoke</b>)</p>
+		<p>[<a href="https://gucorpling.org/annis/#_q=ZW50aXR5IC0-YnJpZGdlW3R5cGU9ImJyaWRnZTphZ2dyIl0gZW50aXR5IC0-aGVhZCAiR29vZGUiIC4qIGVudGl0eSAmICMxIC0-YnJpZGdlICM0&_c=R1VN&cl=5&cr=5&s=0&l=10">Open in ANNIS</a>]</p></blockquote>
+
+
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+
+									<!--#include virtual="../menu.html"-->
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/modal.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
