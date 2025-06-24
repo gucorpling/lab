@@ -153,6 +153,47 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
   address   = {Ljubljana, Slovenia},
   abstract = {Despite recent advances in digital resources for other Coptic dialects, especially Sahidic, Bohairic Coptic, the main Coptic dialect for pre-Mamluk, late Byzantine Egypt, and the contemporary language of the Coptic Church, remains critically under-resourced. This paper presents and evaluates the first syntactically annotated corpus of Bohairic Coptic, sampling data from a range of works, including Biblical text, saints' lives and Christian ascetic writing. We also explore some of the main differences we observe compared to the existing UD treebank of Sahidic Coptic, the classical dialect of the language, and conduct joint and cross-dialect parsing experiments, revealing the unique nature of Bohairic as a related, but distinct variety from the more often studied Sahidic. }
 }
+@inproceedings{levine2025building,
+  author    = {Levine, Lauren and Min, Junghyun and Zeldes, Amir},
+  title     = {Building UD Cairo for Old English in the Classroom},
+  booktitle = {Proceedings of SyntaxFest 2025},
+  year      = {2025},
+  address   = {Ljubljana, Slovenia},
+  url       = {https://arxiv.org/abs/2504.18718}
+  abstract = {In this paper we present a sample treebank for Old English based on the UD Cairo sentences, collected and annotated as part of a classroom curriculum in Historical Linguistics. To collect the data, a sample of 20 sentences illustrating a range of syntactic constructions in the world's languages, we employ a combination of LLM prompting and searches in authentic Old English data. For annotation we assigned sentences to multiple students with limited prior exposure to UD, whose annotations we compare and adjudicate. Our results suggest that while current LLM outputs in Old English do not reflect authentic syntax, this can be mitigated by post-editing, and that although beginner annotators do not possess enough background to complete the task perfectly, taken together they can produce good results and learn from the experience. We also conduct preliminary parsing experiments using Modern English training data, and find that although performance on Old English is poor, parsing on annotated features (lemma, hyperlemma, gloss) leads to improved performance.}
+}
+@inproceedings{levine2025subjectivity,
+  author    = {Levine, Lauren and Zeldes, Amir},
+  title     = {Subjectivity in the Annotation of Bridging Anaphora},
+  booktitle = {Proceedings of the 19th Linguistic Annotation Workshop (LAW-XIX)},
+  year      = {2025},
+  address   = {Vienna, Austria},
+  url       = {https://arxiv.org/abs/2506.07297}
+  abstract = {Bridging refers to the associative relationship between inferable entities in a discourse and the antecedents which allow us to understand them, such as understanding what "the door" means with respect to an aforementioned "house". As identifying associative relations between entities is an inherently subjective task, it is difficult to achieve consistent agreement in the annotation of bridging anaphora and their antecedents. In this paper, we explore the subjectivity involved in the annotation of bridging instances at three levels: anaphor recognition, antecedent resolution, and bridging subtype selection. To do this, we conduct an annotation pilot on the test set of the existing GUM corpus, and propose a newly developed classification system for bridging subtypes, which we compare to previously proposed schemes. Our results suggest that some previous resources are likely to be severely under-annotated. We also find that while agreement on the bridging subtype category was moderate, annotator overlap for exhaustively identifying instances of bridging is low, and that many disagreements resulted from subjective understanding of the entities involved.}
+}
+@inproceedings{levine-2025-signaling,
+  author    = {Levine, Lauren},
+  booktitle = {Proceedings of the Society for Computation in Linguistics (SCiL), Vol. 8},
+  title     = {A Cross-Genre Analysis of Discourse Relation Signaling in the GUM Corpus},
+  year      = {2025},
+  address   = {Eugene, OR, USA},
+  url       = {https://openpublishing.library.umass.edu/scil/article/id/3155/},
+  abstract = {In this paper, we investigate the cross-genre variation in how discourse relations are signaled in the Georgetown University Mutilayer (GUM) Corpus, an English language corpus which contains 16 different genres of texts with various linguistic annotations, including Rhetorical Structure Theory (RST) style discourse annotations. We look at the proportions of discourse signals in each genre, and then we conduct an analysis of which discourse relations display the most inter-genre variation in how they are signaled, providing a methodology for ranking the inter-genre variability of the signaling of individual discourse relations. Although the way in which individual discourse relations are signaled in GUM is relatively stable across genres, we are able still to produce stable rankings, finding that organization, restatement, and explanation relations display the most inter-genre variation. However, we find that genre specific graphical norms can account for a large portion of the observed variation.}
+}
+@inproceedings{scivetti-etal-2025-multilingual,
+    title = "Multilingual Supervision Improves Semantic Disambiguation of Adpositions",
+    author = "Scivetti, Wesley  and
+      Levine, Lauren  and
+      Schneider, Nathan",
+    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics",
+    month = jan,
+    year = "2025",
+    address = "Abu Dhabi, UAE",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.coling-main.247/",
+    pages = "3655--3669",
+    abstract = "Adpositions display a remarkable amount of ambiguity and flexibility in their meanings, and are used in different ways across languages. We conduct a systematic corpus-based cross-linguistic investigation into the lexical semantics of adpositions, utilizing SNACS (Schneider et al., 2018), an annotation framework with data available in several languages. Our investigation encompasses 5 of these languages: Chinese, English, Gujarati, Hindi, and Japanese. We find substantial distributional differences in adposition semantics, even in comparable corpora. We further train classifiers to disambiguate adpositions in each of our languages. Despite the cross-linguistic differences in adpositional usage, sharing annotated data across languages boosts overall disambiguation performance, leading to the highest published scores on this task for all 5 languages."
+}
 @article{zeldes-etal-2025-erst,
     title = "e{RST}: A Signaled Graph Theory of Discourse Relations and Organization",
     author = "Zeldes, Amir  and
