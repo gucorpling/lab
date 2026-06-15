@@ -145,6 +145,73 @@ p.infolinks { margin: 0.3em 0em 0em 0em; padding: 0px; }
 										</div>
 								</div>
 							 <textarea id="bibtex_input" style="display:none;">
+@inproceedings{ju-etal-2025-dedisco,
+    title = "{D}e{D}is{C}o at the {DISRPT} 2025 Shared Task: A System for Discourse Relation Classification",
+    author = "Ju, Zhuoxuan  and
+      Wu, Jingni  and
+      Purushothama, Abhishek  and
+      Zeldes, Amir",
+    editor = "Braud, Chlo{\'e}  and
+      Liu, Yang Janet  and
+      Muller, Philippe  and
+      Zeldes, Amir  and
+      Li, Chuyuan",
+    booktitle = "Proceedings of the 4th Shared Task on Discourse Relation Parsing and Treebanking (DISRPT 2025)",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.disrpt-1.4/",
+    doi = "10.18653/v1/2025.disrpt-1.4",
+    pages = "48--62",
+    ISBN = "979-8-89176-344-9",
+    abstract = "This paper presents DeDisCo, Georgetown University{'}s entry in the DISRPT 2025 shared task on discourse relation classification. We test two approaches, using an mt5-based encoder and a decoder based approach using the openly available Qwen model. We also experiment on training with augmented dataset for low-resource languages using matched data translated automatically from English, as well as using some additional linguistic features inspired by entries in previous editions of the Shared Task. Our system achieves a macro-accuracy score of 71.28, and we provide some interpretation and error analysis for our results."
+}
+@inproceedings{braud-etal-2025-disrpt,
+    title = "The {DISRPT} 2025 Shared Task on Elementary Discourse Unit Segmentation, Connective Detection, and Relation Classification",
+    author = "Braud, Chlo{\'e}  and
+      Zeldes, Amir  and
+      Li, Chuyuan  and
+      Liu, Yang Janet  and
+      Muller, Philippe",
+    editor = "Braud, Chlo{\'e}  and
+      Liu, Yang Janet  and
+      Muller, Philippe  and
+      Zeldes, Amir  and
+      Li, Chuyuan",
+    booktitle = "Proceedings of the 4th Shared Task on Discourse Relation Parsing and Treebanking (DISRPT 2025)",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.disrpt-1.1/",
+    doi = "10.18653/v1/2025.disrpt-1.1",
+    pages = "1--20",
+    ISBN = "979-8-89176-344-9",
+    abstract = "In 2025, we held the fourth iteration of the DISRPT Shared Task (Discourse Relation Parsing and Treebanking) dedicated to discourse parsing across formalisms. Following the success of the 2019, 2021, and 2023 tasks on Elementary Discourse Unit Segmentation, Connective Detection, and Relation Classification, this iteration added 13 new datasets, including three new languages (Czech, Polish, Nigerian Pidgin) and two new frameworks: the ISO framework and Enhanced Rhetorical Structure Theory, in addition to the previously included frameworks: RST, SDRT, DEP, and PDTB. In this paper, we review the data included in DISRPT 2025, which covers 39 datasets across 16 languages, survey and compare submitted systems, and report on system performance on each task for both treebanked and plain-tokenized versions of the data. The best systems obtain a mean accuracy of 71.19{\%} for relation classification, a mean F1 of 91.57 (Treebanked Track) and 87.38 (Plain Track) for segmentation, and a mean F1 of 81.53 (Treebanked Track) and 79.92 (Plain Track) for connective identification. The data and trained models of several participants can be found at https://huggingface.co/multilingual-discourse-hub."
+}
+@inproceedings{wu-zeldes-2025-unpacking,
+    title = "Unpacking Ambiguity: The Interaction of Polysemous Discourse Markers and Non-{DM} Signals",
+    author = "Wu, Jingni  and
+      Zeldes, Amir",
+    editor = "Strube, Michael  and
+      Braud, Chloe  and
+      Hardmeier, Christian  and
+      Li, Junyi Jessy  and
+      Loaiciga, Sharid  and
+      Zeldes, Amir  and
+      Li, Chuyuan",
+    booktitle = "Proceedings of the 6th Workshop on Computational Approaches to Discourse, Context and Document-Level Inferences (CODI 2025)",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.codi-1.2/",
+    doi = "10.18653/v1/2025.codi-1.2",
+    pages = "14--26",
+    ISBN = "979-8-89176-343-2",
+    abstract = "Discourse markers (DMs) like `but' or `then' are crucial for creating coherence in discourse, yet they are often replaced by or co-occur with non-DMs ({`}in the morning' can mean the same as `then'), and both can be ambiguous ({`}since' can refer to time or cause). The interaction mechanism between such signals remains unclear but pivotal for their disambiguation. In this paper we investigate the relationship between DM polysemy and co-occurrence of non-DM signals in English, as well as the influence of genre on these patterns. Using the framework of eRST, we propose a graded definition of DM polysemy, and conduct correlation and regression analyses to examine whether polysemous DMs are accompanied by more numerous and diverse non-DM signals. Our findings reveal that while polysemous DMs do co-occur with more diverse non-DMs, the total number of co-occurring signals does not necessarily increase. Moreover, genre plays a significant role in shaping DM-signal interactions."
+}
 @inproceedings{zeldes2025ud,
   author    = {Zeldes, Amir and Speransky, Nina and Wagner, Nicholas and Schroeder, Caroline T.},
   title     = {A UD Treebank for Bohairic Coptic},
